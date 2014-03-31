@@ -2866,7 +2866,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Öl-Haendler"",life_fnc_virt_menu,""oil""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Oel-Haendler"",life_fnc_virt_menu,""oil""];";
 				};
 				class Item65
 				{
@@ -7698,7 +7698,7 @@ class Mission
 		{
 			position[]={3400.7595,1.8830158,12899.346};
 			name="fish_market_1";
-			text="Fisch-Haendler";
+			text="Fisch Haendler";
 			type="mil_box";
 			colorName="ColorGreen";
 		};
@@ -7706,7 +7706,7 @@ class Mission
 		{
 			position[]={3765.8088,18.85,12990.187};
 			name="hospital_marker";
-			text="Krankenhausl";
+			text="Krankenhaus";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -7858,7 +7858,7 @@ class Mission
 		{
 			position[]={6263.5244,43,16265.374};
 			name="OilP";
-			text="Öl Raffinerie";
+			text="Oel Raffinerie";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -7906,7 +7906,7 @@ class Mission
 		{
 			position[]={4412.5562,37.095924,12605.266};
 			name="lead_1";
-			text=Kupfermine";
+			text="Kupfermine";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -8037,7 +8037,7 @@ class Mission
 		{
 			position[]={4187.0205,36.297176,13106.365};
 			name="apple_1";
-			text="Aepfel";         
+			text="Apfelplantage";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8045,7 +8045,7 @@ class Mission
 		{
 			position[]={25982.121,15.485652,20889.566};
 			name="apple_2";
-			text="Aepfel";         
+			text="Apfelplantage";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8053,7 +8053,7 @@ class Mission
 		{
 			position[]={4345.1636,33.150127,13982.917};
 			name="peaches_2";
-			text="Pfirsiche";
+			text="Pfirsichplantage";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8061,7 +8061,7 @@ class Mission
 		{
 			position[]={10800.928,32.462917,13238.061};
 			name="peaches_1";
-			text="Pfirsiche";
+			text="Pfirsichplantage";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8077,7 +8077,7 @@ class Mission
 		{
 			position[]={10022.424,14.231085,12550.737};
 			name="apple_3";
-			text="Aepfel";         
+			text="Apfelplantage";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8085,7 +8085,7 @@ class Mission
 		{
 			position[]={13618,16.567661,18105.947};
 			name="apple_4";
-			text="Aepfel";         
+			text="Apfelplantage";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8093,7 +8093,7 @@ class Mission
 		{
 			position[]={13120.37,39.285686,19673.133};
 			name="peaches_3";
-			text="Pfirsiche";
+			text="Pfirsichplantage";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8101,7 +8101,7 @@ class Mission
 		{
 			position[]={14418.972,18.719999,16244.317};
 			name="air_serv_1";
-			text="Air Service Station";
+			text="Heli-Werkstatt";
 			type="respawn_air";
 			colorName="Color1_FD_F";
 		};
@@ -8117,7 +8117,7 @@ class Mission
 		{
 			position[]={4563.9795,262.76147,15414.913};
 			name="7News_1";
-			text="Kanal 7 News";
+			text="FuXe News-Channel";
 			type="loc_Transmitter";
 			colorName="ColorWhite";
 		};
@@ -8590,7 +8590,7 @@ class Mission
 		{
 			position[]={9757.7891,231.07008,19445.281};
 			name="oil_1";
-			text="Oil Field";
+			text="Oel Vorkommen";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -8886,7 +8886,7 @@ class Mission
 		{
 			position[]={12582.778,34.149235,16394.836};
 			name="oil_trader";
-			text="Oel Haendler";
+			text=Öl Händler;
 			type="b_unknown";
 			colorName="ColorOrange";
 		};
@@ -8920,7 +8920,7 @@ class Mission
 		{
 			position[]={5327.8848,22.266685,14476.616};
 			name="oil_trader_4";
-			text="Metall-Haendler";
+			text="Metall Haendler";
 			type="b_unknown";
 			colorName="ColorOrange";
 			angle=-0.60203898;
@@ -9202,7 +9202,7 @@ class Mission
 		{
 			position[]={16740.566,10.336296,13634.214};
 			name="fed_reserve";
-			text="Federal Reserve";
+			text="Bundesbank";
 			type="mil_box";
 			colorName="Color4_FD_F";
 		};
@@ -9357,7 +9357,7 @@ class Mission
 		{
 			position[]={24923.563,6.8026099,18953.787};
 			name="oil_trader_4_1";
-			text="EisenhÃƒÂ¤ndler";
+			text="Eisen Haendler";
 			type="b_unknown";
 			colorName="ColorOrange";
 			angle=-0.60203898;
@@ -9366,7 +9366,7 @@ class Mission
 		{
 			position[]={17203.205,15.637681,12302.338};
 			name="apple_2_1";
-			text="Aepfel";         
+			text="Apfelplantage";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};

@@ -1,6 +1,6 @@
-author = "TAW_Tonic";
-onLoadName = "Altis Life RPG v3.1.2";
-onLoadMission = "A RPG game mode developed by TAW_Tonic";
+author = "TAW_Tonic with mods by FXE";
+onLoadName = "Altis Life RPG FXE-enhanced";
+onLoadMission = "A RPG game mode developed by TAW_Tonic and modified by Team FXE == www.PapaBrenner.de ==";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 10;
@@ -12,7 +12,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 75;
+	maxPlayers = 90;
 };
 
 wreckLimit = 3;
@@ -58,7 +58,7 @@ class CfgDebriefing
 	{
 		title = "Mission Failed";
 		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		description = "Du bist nicht fuer diese Art von Beruf freigeschaltet! Bitte einen offenen Slot versuchen oder die Seite wechseln!";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -67,8 +67,8 @@ class CfgDebriefing
 	class Blacklisted
 	{
 		title = "Mission Failed";
-		subtitle = "You are blacklisted from cops";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		subtitle = "You are blacklisted from this side";
+		description = "Auf Grund einer Adminentscheidung ist es dir nicht mehr erlaubt diese Seite zu spielen!";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -79,7 +79,7 @@ class CfgNotifications
 {
 	class DeliveryAssigned
 	{
-		title = "Delivery Job Accepted";
+		title = "Liefermission angenommen.";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 10;
@@ -88,7 +88,7 @@ class CfgNotifications
 	
 	class DeliveryFailed
 	{
-		title = "Delivery Job Failed";
+		title = "Liefermission fehlgeschlagen!";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
 		description = "%1";
 		duration = 7;
@@ -97,7 +97,7 @@ class CfgNotifications
 	
 	class DeliverySucceeded
 	{
-		title = "Delivery Job Completed";
+		title = "Liefermission erfolgreich!";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
 		description = "%1";
 		duration = 6;
@@ -106,7 +106,7 @@ class CfgNotifications
 	
 	class TextMessage
 	{
-		title = "Received A Text Message";
+		title = "Textnachricht erhalten";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
@@ -115,7 +115,7 @@ class CfgNotifications
 	
 	class PoliceDispatch
 	{
-		title = "911 Dispatch Center";
+		title = "Anzeige eingegangen:";
 		iconPicture = "icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -124,7 +124,7 @@ class CfgNotifications
 	
 	class AdminDispatch
 	{
-		title = "Admin Dispatch Center";
+		title = "Admin-Anfrage erhalten:";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
@@ -133,7 +133,7 @@ class CfgNotifications
 	
 	class AdminMessage
 	{
-		title = "Admin Message";
+		title = "Admin-Nachricht!";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
