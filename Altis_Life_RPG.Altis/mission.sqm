@@ -7698,7 +7698,7 @@ class Mission
 		{
 			position[]={3400.7595,1.8830158,12899.346};
 			name="fish_market_1";
-			text="Fish Market";
+			text="Fisch-Händler";
 			type="mil_box";
 			colorName="ColorGreen";
 		};
@@ -7706,7 +7706,7 @@ class Mission
 		{
 			position[]={3765.8088,18.85,12990.187};
 			name="hospital_marker";
-			text="Hospital";
+			text="Krankenhausl";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -7745,7 +7745,7 @@ class Mission
 		{
 			position[]={13820.758,19.826002,18969.209};
 			name="cop_spawn_3";
-			text="Police Station";
+			text="Polizei-Wache";
 			type="mil_box";
 			colorName="ColorBLUFOR";
 		};
@@ -7753,7 +7753,7 @@ class Mission
 		{
 			position[]={15194.059,17.913683,17313.797};
 			name="cop_spawn_4";
-			text="Police Air HQ";
+			text="Polizei Luftüberwachung";
 			type="mil_box";
 			colorName="ColorBLUFOR";
 		};
@@ -7769,7 +7769,7 @@ class Mission
 		{
 			position[]={23823.781,3.1900001,18601.668};
 			name="salt_1";
-			text="Salt Mine";
+			text="Salz Mine";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -7777,7 +7777,7 @@ class Mission
 		{
 			position[]={27361.367,6.3006272,24465.764};
 			name="Salt";
-			text="Salt Processing";
+			text="Salz Verarbeitung";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -7785,7 +7785,7 @@ class Mission
 		{
 			position[]={22150.52,3.150569,14475.64};
 			name="Correctional Facility";
-			text="Altis Corrections";
+			text="Strafvollzug";
 			type="mil_dot";
 			colorName="Color4_FD_F";
 		};
@@ -7793,7 +7793,7 @@ class Mission
 		{
 			position[]={3269.3455,2.1793349,12967.998};
 			name="police_hq_1";
-			text="Police HQ";
+			text="Polizei-Wache";
 			type="mil_box";
 			colorName="Color4_FD_F";
 		};
@@ -7801,7 +7801,7 @@ class Mission
 		{
 			position[]={16589.234,11,12763.845};
 			name="police_hq_2";
-			text="Police Station";
+			text="Polizei-Wache";
 			type="mil_box";
 			colorName="Color4_FD_F";
 		};
@@ -7809,7 +7809,7 @@ class Mission
 		{
 			position[]={14276.118,4.1247582,13044.42};
 			name="CG";
-			text="Coast Guard ";
+			text="Küstenwache";
 			type="Empty";
 			colorName="Color4_FD_F";
 		};
@@ -7817,7 +7817,7 @@ class Mission
 		{
 			position[]={9191.0293,14.377453,21676.027};
 			name="Rebelop";
-			text="Rebel Outpost";
+			text="Rebellen-Lager";
 			type="mil_triangle";
 			colorName="Color1_FD_F";
 		};
@@ -7825,7 +7825,7 @@ class Mission
 		{
 			position[]={14676.569,17.91,16773.182};
 			name="airshop";
-			text="Air Shop";
+			text="Heli-Händler";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 		};
@@ -7833,7 +7833,7 @@ class Mission
 		{
 			position[]={16087.392,15.810549,16997.58};
 			name="Tonic";
-			text="Tonics Bio Testing Facility";
+			text="Tonic's Bio-Labor";
 			type="mil_box";
 			colorName="ColorKhaki";
 		};
@@ -7841,7 +7841,7 @@ class Mission
 		{
 			position[]={3763.6846,34.367668,12372.792};
 			name="civ_truck_shop1";
-			text="Truck Shop";
+			text="LKW Händler";
 			type="c_car";
 			colorName="ColorBlue";
 		};
@@ -7857,7 +7857,7 @@ class Mission
 		{
 			position[]={6263.5244,43,16265.374};
 			name="OilP";
-			text="Oil Processing";
+			text="Öl Raffinerie";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -7881,7 +7881,7 @@ class Mission
 		{
 			position[]={8959.7256,69.222336,15507.252};
 			name="chop_shop_1";
-			text="Chop Shop";
+			text="Fahrzeughehler";
 			type="o_armor";
 			colorName="Color1_FD_F";
 		};
@@ -7889,7 +7889,7 @@ class Mission
 		{
 			position[]={8440.3506,49.484863,12756.805};
 			name="cocaine processing";
-			text="Cocaine Processing";
+			text="Kokain-Verarbeitung";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 		};
@@ -7897,7 +7897,7 @@ class Mission
 		{
 			position[]={167.63799,0.021615377,14709.002};
 			name="truck_1";
-			text="Truck Shop";
+			text="LKW Händler";
 			type="c_car";
 			colorName="ColorBlack";
 		};
@@ -7905,7 +7905,7 @@ class Mission
 		{
 			position[]={4412.5562,37.095924,12605.266};
 			name="lead_1";
-			text="Copper Mine";
+			text=Kupfermine";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -7913,7 +7913,7 @@ class Mission
 		{
 			position[]={167.56963,0.078673914,14509.83};
 			name="atm";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -7929,7 +7929,7 @@ class Mission
 		{
 			position[]={169.09892,-0.026115492,14814.396};
 			name="Carshop";
-			text="Car Shop";
+			text="Autohändler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -7937,7 +7937,7 @@ class Mission
 		{
 			position[]={169.36064,0.027309759,14608.475};
 			name="Hospital_1";
-			text="Hospital/Clinic";
+			text="Krankenhaus";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -7976,7 +7976,7 @@ class Mission
 		{
 			position[]={3479.1758,2.6362305,13231.096};
 			name="Gen";
-			text="General Store";
+			text="Survival-Shop";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -7992,7 +7992,7 @@ class Mission
 		{
 			position[]={161.06902,0.056310706,14202.72};
 			name="boat_1";
-			text="Boat Shop";
+			text="Bootshändler";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -8014,7 +8014,7 @@ class Mission
 		{
 			position[]={3364.3098,4.8093276,13064.118};
 			name="Gen_3";
-			text="Bruce's Outback Outfits";
+			text="Renner's Textilien";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8036,7 +8036,7 @@ class Mission
 		{
 			position[]={4187.0205,36.297176,13106.365};
 			name="apple_1";
-			text="Apple Field";
+			text="Äpfel";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8044,7 +8044,7 @@ class Mission
 		{
 			position[]={25982.121,15.485652,20889.566};
 			name="apple_2";
-			text="Apple Field";
+			text="Äpfel";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8052,7 +8052,7 @@ class Mission
 		{
 			position[]={4345.1636,33.150127,13982.917};
 			name="peaches_2";
-			text="Peaches Field";
+			text="Pfirsiche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8060,7 +8060,7 @@ class Mission
 		{
 			position[]={10800.928,32.462917,13238.061};
 			name="peaches_1";
-			text="Peaches Field";
+			text="Pfirsiche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8068,7 +8068,7 @@ class Mission
 		{
 			position[]={3486.2664,7.7271852,12951.688};
 			name="Gen_3_1";
-			text="Market";
+			text="Markt";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8076,7 +8076,7 @@ class Mission
 		{
 			position[]={10022.424,14.231085,12550.737};
 			name="apple_3";
-			text="Apple Field";
+			text="Äpfel";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8084,7 +8084,7 @@ class Mission
 		{
 			position[]={13618,16.567661,18105.947};
 			name="apple_4";
-			text="Apple Field";
+			text="Äpfel";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8092,7 +8092,7 @@ class Mission
 		{
 			position[]={13120.37,39.285686,19673.133};
 			name="peaches_3";
-			text="Peach Field";
+			text="Pfirsiche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -8108,7 +8108,7 @@ class Mission
 		{
 			position[]={3269.3455,2.1793349,12967.998};
 			name="Police HQ_1";
-			text="Police HQ";
+			text="Polizei-Wache";
 			type="mil_box";
 			colorName="Color4_FD_F";
 		};
@@ -8116,7 +8116,7 @@ class Mission
 		{
 			position[]={4563.9795,262.76147,15414.913};
 			name="7News_1";
-			text="Channel 7 News";
+			text="Kanal 7 News";
 			type="loc_Transmitter";
 			colorName="ColorWhite";
 		};
@@ -8140,7 +8140,7 @@ class Mission
 		{
 			position[]={3669.2141,10.440954,13108.464};
 			name="car1_1";
-			text="Car Shop";
+			text="Autohändler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -8164,7 +8164,7 @@ class Mission
 		{
 			position[]={3041.5544,2.0197022,12612.536};
 			name="boat_2";
-			text="Boat Shop";
+			text="Bootshändler";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -8172,7 +8172,7 @@ class Mission
 		{
 			position[]={3457.7097,5.4230289,13108.353};
 			name="license_shop";
-			text="DMV";
+			text="Lizenz-Büro";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-1.9030067;
@@ -8181,7 +8181,7 @@ class Mission
 		{
 			position[]={3914.5459,16.270481,13591.836};
 			name="dp_missions";
-			text="Delivery Missions";
+			text="Lieferaufträge";
 			type="mil_box";
 			colorName="ColorYellow";
 		};
@@ -8189,7 +8189,7 @@ class Mission
 		{
 			position[]={3427.2068,2.5439744,12735.082};
 			name="dive_shop";
-			text="Diving Shop";
+			text="Tauchladen";
 			type="mil_box";
 			colorName="ColorOrange";
 			angle=-144.45552;
@@ -8198,7 +8198,7 @@ class Mission
 		{
 			position[]={3492.7932,19.49818,14145.842};
 			name="Dealer_1";
-			text="Drug Dealer";
+			text="Drogendealer";
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
@@ -8415,7 +8415,7 @@ class Mission
 		{
 			position[]={20884.641,2.7453954,14624.866};
 			name="Dealer_1_3";
-			text="Drug Dealer";
+			text="Drogendealer";
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
@@ -8423,7 +8423,7 @@ class Mission
 		{
 			position[]={14327.465,18.488745,17427.523};
 			name="Dealer_1_4";
-			text="Drug Dealer";
+			text="Drogendealer";
 			type="mil_dot";
 			colorName="ColorOrange";
 			angle=-57.933056;
@@ -8504,7 +8504,7 @@ class Mission
 		{
 			position[]={25711.227,20.579828,21377.992};
 			name="atm_1_3_11_1";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8512,7 +8512,7 @@ class Mission
 		{
 			position[]={18088.531,24.165459,15227.906};
 			name="atm_1_3_11_2";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8520,7 +8520,7 @@ class Mission
 		{
 			position[]={14592.844,17.91,16797.219};
 			name="atm_1_3_11_3";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8528,7 +8528,7 @@ class Mission
 		{
 			position[]={12647.118,17.178696,14397.734};
 			name="atm_1_3_11_4";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=3.7905569;
@@ -8537,7 +8537,7 @@ class Mission
 		{
 			position[]={27046.746,21.991171,23265.992};
 			name="atm_1_3_11_5";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8545,7 +8545,7 @@ class Mission
 		{
 			position[]={21718.314,15.129724,7554.5073};
 			name="atm_1_3_11_6";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=-87.714554;
@@ -8554,7 +8554,7 @@ class Mission
 		{
 			position[]={4573.7871,300.83084,21433.666};
 			name="atm_1_3_11_7";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=-9.3215389;
@@ -8563,7 +8563,7 @@ class Mission
 		{
 			position[]={25831.131,20.912157,21446.154};
 			name="car1_1";
-			text="Car Shop";
+			text="Autohändler";
 			type="c_car";
 			colorName="ColorWhite";
 		};
@@ -8657,7 +8657,7 @@ class Mission
 		{
 			position[]={14026.882,26.953672,18704.109};
 			name="license_shop_1";
-			text="DMV";
+			text="Lizenz-Büro";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-1.9030067;
@@ -8680,7 +8680,7 @@ class Mission
 		{
 			position[]={26847.824,24.010233,24593.961};
 			name="airshop_1";
-			text="Air Shop";
+			text="Heli-Händler";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 		};
@@ -8718,7 +8718,7 @@ class Mission
 		{
 			position[]={3418.2671,3.2793496,12996.707};
 			name="atm_1_3_11_5_1";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8726,7 +8726,7 @@ class Mission
 		{
 			position[]={16863.336,19.728359,12734.651};
 			name="atm_1_3_11_5_2";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8734,7 +8734,7 @@ class Mission
 		{
 			position[]={20552.01,35.247543,8898.9805};
 			name="atm_1_3_11_5_3";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8757,7 +8757,7 @@ class Mission
 		{
 			position[]={9085.4102,20.793713,12038.007};
 			name="Gen_3_1_1";
-			text="Market";
+			text="Markt";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8765,7 +8765,7 @@ class Mission
 		{
 			position[]={8996.3438,31.846046,12114.338};
 			name="atm_1_3_11_4_1";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=3.7905569;
@@ -8774,7 +8774,7 @@ class Mission
 		{
 			position[]={8956.4238,27.330736,11999.08};
 			name="Gen_3_3";
-			text="Bruce's Outback Outfits";
+			text="Renner's Textilien";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8782,7 +8782,7 @@ class Mission
 		{
 			position[]={25665.254,19.308283,21296.332};
 			name="Gen_3_4";
-			text="Bruce's Outback Outfits";
+			text="Renner's Textilien";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8790,7 +8790,7 @@ class Mission
 		{
 			position[]={25573.17,19.70323,21312.16};
 			name="Gen_3_1_1_1";
-			text="Market";
+			text="Markt";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8798,7 +8798,7 @@ class Mission
 		{
 			position[]={14041.689,24.368345,18787.1};
 			name="Gen_3_1_1_2";
-			text="Market";
+			text="Markt";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8806,7 +8806,7 @@ class Mission
 		{
 			position[]={14074.721,23.343645,18559.061};
 			name="Gen_3_4_1";
-			text="Bruce's Outback Outfits";
+			text="Renner's Textilien";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8822,7 +8822,7 @@ class Mission
 		{
 			position[]={25750.627,20.775032,21366.285};
 			name="license_shop_2";
-			text="DMV";
+			text="Lizenz-Büro";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-1.9030067;
@@ -8831,7 +8831,7 @@ class Mission
 		{
 			position[]={16876.307,19.12689,12710.189};
 			name="Gen_2";
-			text="General Store";
+			text="Survival-Shop";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -8839,7 +8839,7 @@ class Mission
 		{
 			position[]={25754.789,20.885283,21385.201};
 			name="Gen_2_1";
-			text="General Store";
+			text="Survival-Shop";
 			type="c_unknown";
 			colorName="ColorGreen";
 			angle=-0.67126209;
@@ -8848,7 +8848,7 @@ class Mission
 		{
 			position[]={16995.186,15.885057,12661.559};
 			name="license_shop_2_1";
-			text="DMV";
+			text="Lizenz-Büro";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=30.320122;
@@ -8927,7 +8927,7 @@ class Mission
 		{
 			position[]={3655.2383,10.500181,13083.42};
 			name="atm_1_3_11_5_4";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8935,7 +8935,7 @@ class Mission
 		{
 			position[]={3271.1895,2.1598353,12950.022};
 			name="atm_1_3_11_5_5";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 		};
@@ -8950,7 +8950,7 @@ class Mission
 		{
 			position[]={18157.965,26.492321,12840.584};
 			name="civ_truck_shop1_1";
-			text="Truck Shop";
+			text="LKW Händler";
 			type="c_car";
 			colorName="ColorBlue";
 		};
@@ -8972,7 +8972,7 @@ class Mission
 		{
 			position[]={12290.406,123.8956,8899.7314};
 			name="Rebelop_1";
-			text="Rebel Outpost";
+			text="Rebellen-Lager";
 			type="mil_triangle";
 			colorName="Color1_FD_F";
 		};
@@ -8980,7 +8980,7 @@ class Mission
 		{
 			position[]={20081.033,100.96766,6737.1904};
 			name="Rebelop_2";
-			text="Rebel Outpost";
+			text="Rebellen-Lager";
 			type="mil_triangle";
 			colorName="Color1_FD_F";
 		};
@@ -9135,7 +9135,7 @@ class Mission
 		{
 			position[]={12682.691,1.9715809,14214.604};
 			name="boat_2_1";
-			text="Boat Shop";
+			text="Bootshändler";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -9151,7 +9151,7 @@ class Mission
 		{
 			position[]={17539.715,3.019192,18943.441};
 			name="boat_2_1_1";
-			text="Boat Shop";
+			text="Bootshändler";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -9167,7 +9167,7 @@ class Mission
 		{
 			position[]={17014.414,15.973641,12630.738};
 			name="Gen_3_1_1_3";
-			text="Market";
+			text="Markt";
 			type="c_unknown";
 			colorName="ColorGreen";
 			angle=127.88971;
@@ -9176,7 +9176,7 @@ class Mission
 		{
 			position[]={13946.49,22.888865,18664.123};
 			name="Gen_4";
-			text="General Store";
+			text="Survival-Shop";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9238,7 +9238,7 @@ class Mission
 		{
 			position[]={23536.096,13.262702,19955.652};
 			name="atm_1_3_11_5_5_1";
-			text="ATM";
+			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=150.42087;
@@ -9247,7 +9247,7 @@ class Mission
 		{
 			position[]={11849.67,4.2975636,13611.597};
 			name="dive_shop_1";
-			text="Diving Shop";
+			text="Tauchladen";
 			type="mil_box";
 			colorName="ColorOrange";
 			angle=-144.45552;
@@ -9315,7 +9315,7 @@ class Mission
 		{
 			position[]={24660.627,17.608727,23158.951};
 			name="chop_shop_2";
-			text="Chop Shop";
+			text="Fahrzeughehler";
 			type="o_armor";
 			colorName="Color1_FD_F";
 		};
@@ -9323,7 +9323,7 @@ class Mission
 		{
 			position[]={5242.2974,78.634445,11514.398};
 			name="chop_shop_3";
-			text="Chop Shop";
+			text="Fahrzeughehler";
 			type="o_armor";
 			colorName="Color1_FD_F";
 		};
@@ -9331,7 +9331,7 @@ class Mission
 		{
 			position[]={19029.779,23.749619,14549.058};
 			name="chop_shop_4";
-			text="Chop Shop";
+			text="Fahrzeughehler";
 			type="o_armor";
 			colorName="Color1_FD_F";
 		};
@@ -9355,7 +9355,7 @@ class Mission
 		{
 			position[]={17203.205,15.637681,12302.338};
 			name="apple_2_1";
-			text="Apple Field";
+			text="Äpfel";         
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
