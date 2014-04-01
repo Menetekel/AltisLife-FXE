@@ -16748,7 +16748,6 @@ class Mission
 			name="car1_2";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=0.011481642;
 		};
 		class Item38
 		{
@@ -16756,7 +16755,6 @@ class Mission
 			name="Atm1_1_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-14.744699;
 		};
 		class Item39
 		{
@@ -16787,14 +16785,12 @@ class Mission
 			position[]={3647.8298,10.226415,13122.039};
 			name="civ_car_1";
 			type="Empty";
-			angle=222.94595;
 		};
 		class Item43
 		{
 			position[]={3653.8333,10.282446,13121.501};
 			name="civ_car_1_1";
 			type="Empty";
-			angle=208.40829;
 		};
 		class Item44
 		{
@@ -16809,14 +16805,12 @@ class Mission
 			position[]={16993.305,16.343332,12859.62};
 			name="civ_car_2";
 			type="Empty";
-			angle=148.42909;
 		};
 		class Item46
 		{
 			position[]={14037.903,25.621716,18750.951};
 			name="civ_car_3";
 			type="Empty";
-			angle=126.40627;
 		};
 		class Item47
 		{
@@ -16938,7 +16932,6 @@ class Mission
 			name="car1_2_1_1";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=359.19183;
 		};
 		class Item62
 		{
@@ -16946,7 +16939,6 @@ class Mission
 			name="Atm1_1_1_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-14.744699;
 		};
 		class Item63
 		{
@@ -16963,7 +16955,6 @@ class Mission
 			text="Lizenz-Buero";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=-1.9030067;
 		};
 		class Item65
 		{
@@ -16980,7 +16971,6 @@ class Mission
 			text="Tauchladen";
 			type="mil_box";
 			colorName="ColorOrange";
-			angle=-144.45552;
 		};
 		class Item67
 		{
@@ -16995,7 +16985,6 @@ class Mission
 			position[]={3649.4426,7.00559,13384.339};
 			name="jail_release";
 			type="Empty";
-			angle=190.78471;
 		};
 		class Item69
 		{
@@ -17036,7 +17025,6 @@ class Mission
 			text="DP 17";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-140.186;
 		};
 		class Item74
 		{
@@ -17053,7 +17041,6 @@ class Mission
 			text="DP 18";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=165.897;
 		};
 		class Item76
 		{
@@ -17062,7 +17049,6 @@ class Mission
 			text="DP 13";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=43.241501;
 		};
 		class Item77
 		{
@@ -17087,7 +17073,6 @@ class Mission
 			text="DP 15";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-61.743599;
 		};
 		class Item80
 		{
@@ -17104,7 +17089,6 @@ class Mission
 			text="DP 22";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-62.148312;
 		};
 		class Item82
 		{
@@ -17113,7 +17097,6 @@ class Mission
 			text="DP 24";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=144.67558;
 		};
 		class Item83
 		{
@@ -17122,7 +17105,6 @@ class Mission
 			text="DP 23";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-44.569088;
 		};
 		class Item84
 		{
@@ -17155,7 +17137,6 @@ class Mission
 			text="DP 9";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=86.109383;
 		};
 		class Item88
 		{
@@ -17164,7 +17145,6 @@ class Mission
 			text="DP 8";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=122.0182;
 		};
 		class Item89
 		{
@@ -17197,7 +17177,6 @@ class Mission
 			text="DP 25";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-25.325846;
 		};
 		class Item93
 		{
@@ -17214,7 +17193,6 @@ class Mission
 			text="Drogendealer";
 			type="mil_dot";
 			colorName="ColorOrange";
-			angle=-57.933056;
 		};
 		class Item95
 		{
@@ -17224,7 +17202,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=154.474;
 		};
 		class Item96
 		{
@@ -17234,7 +17211,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-10.0823;
 		};
 		class Item97
 		{
@@ -17244,7 +17220,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-33.9603;
 		};
 		class Item98
 		{
@@ -17254,7 +17229,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-119.016;
 		};
 		class Item99
 		{
@@ -17264,7 +17238,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-286.052;
 		};
 		class Item100
 		{
@@ -17274,7 +17247,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-415.91299;
 		};
 		class Item101
 		{
@@ -17284,7 +17256,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-415.91299;
 		};
 		class Item102
 		{
@@ -17294,7 +17265,6 @@ class Mission
 			type="mil_dot";
 			colorName="ColorUnknown";
 			alpha=0;
-			angle=-415.91299;
 		};
 		class Item103
 		{
