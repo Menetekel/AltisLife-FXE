@@ -25,6 +25,7 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
+		class surrender {}; //surrender
 		class buyLicense {};
 		class chemlightUse {};
 		class heal {};
