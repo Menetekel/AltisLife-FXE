@@ -47,6 +47,24 @@ switch (_code) do
 			};
 		};
 	};
+	//2 Key for Pickaxe
+    case 2:
+    {    
+        if((!life_action_inUse) && (vehicle player == player) ) then
+        {
+            {
+                _str = [_x] call life_fnc_varToStr;
+                _val = missionNameSpace getVariable _x;
+                if(_val > 0 ) then
+                {
+                    if( _str == "Spitzhacke" || _str == "pickaxe" ) then
+                    {
+                        [] spawn life_fnc_pickAxeUse;
+                    };
+                };
+            } foreach life_inv_items;
+        }
+    };
 	
 	//Restraining (Shift + R)
 	case 19:
