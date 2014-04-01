@@ -25,6 +25,7 @@ switch (_vehicle) do
 			case 6: {_color = "Black"};
 			case 7: {_color = "Black"};
 			case 8: {_color = "Taxi"};
+			case 9: {_color = "Autobahnpolizei"};
 		};
 	};
 	
@@ -143,13 +144,24 @@ switch (_vehicle) do
 			case 3: {_color = "Desert Digi"};
 		};
 	};
-	
+
+//Hunter	
 	case "B_MRAP_01_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Regular"};
 			case 1: {_color = "Black"};
+		};
+	};
+
+//FXE Strider
+	case "I_MRAP_03_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Regular"};
+			case 1: {_color = "Black Polizei"};
 		};
 	};
 	

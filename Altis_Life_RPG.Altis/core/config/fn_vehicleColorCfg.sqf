@@ -49,7 +49,8 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
-			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]
+			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
+			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","cop"]
 		];
 	};
 	
@@ -113,7 +114,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa","reb"]
 		];
 	};
-	
+//Hummingbird
 	case "B_Heli_Light_01_F":
 	{
 		_ret = 
@@ -134,7 +135,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"]
 		];
 	};
-	
+//Orca
 	case "O_Heli_Light_02_unarmed_F":
 	{
 		_ret = 
@@ -145,13 +146,22 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"]
 		];
 	};
-	
+//Hunter
 	case "B_MRAP_01_F":
 	{
 		_ret = 
 		[
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
+		];
+	};
+//FXE Strider
+	case "I_MRAP_03_F":
+	{
+		_ret = 
+		[
+			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
 		];
 	};
 	
