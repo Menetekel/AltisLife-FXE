@@ -2,14 +2,14 @@ waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
 player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
-player createDiarySubject ["policerules","Police Procedures/Rules"];
-player createDiarySubject ["safezones","Safe Zones (No Killing)"];
-//player createDiarySubject ["civrules","Civilian Rules"];
-player createDiarySubject ["illegalitems","Illegal Activity"];
-//player createDiarySubject ["gangrules","Gang Rules"];
-//player createDiarySubject ["terrorrules","Terrorism Rules"];
-player createDiarySubject ["controls","Controls"];
+player createDiarySubject ["serverrules","Allgemeine Regeln"];
+player createDiarySubject ["policerules","Polizei Richtlinien"];
+player createDiarySubject ["safezones","Safe Zones (Kein PVP)"];
+//player createDiarySubject ["civrules","Zivilisten Regeln"];
+player createDiarySubject ["illegalitems","Illegale Aktivit‰ten"];
+//player createDiarySubject ["gangrules","Gang Regeln"];
+//player createDiarySubject ["terrorrules","Rebellen Regeln"];
+player createDiarySubject ["controls","Tastenconfig"];
 
 /*  Example
 	player createDiaryRecord ["", //Container
@@ -23,18 +23,18 @@ player createDiarySubject ["controls","Controls"];
 */
 	player createDiaryRecord["changelog",
 		[
-			"Official Change Log",
+			"Offizielles Change Log",
 				"
-					The official change log can be found on the BIS forums (search Altis Life RPG)
+					Das offizielle Changelog zu Altis Life findet ihr unter: www.altisliferpg.com
 				"
 		]
 	];
 	
 	player createDiaryRecord["changelog",
 		[
-			"Custom Change Log",
+			"FXE Change Log",
 				"
-					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.
+					Unser internes Change Log findet ihr unter:
 				"
 		]
 	];
@@ -175,7 +175,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["serverrules",
 		[
-			"New Life Rule", 
+			"Die 'New Life' Regel", 
 				"
 				The New Life Rule applies to police and civilians.<br/><br/>
 				
@@ -192,7 +192,7 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["serverrules",
 		[
-			"Don't Be A Dick!", 
+			"Sei' kein Idiot", 
 				"
 				If an admin has to tell you that you are being a dick, you are doing dickish things.<br/>
 				Causing others grief, disrupting roleplay, the list goes on.<br/>
@@ -205,7 +205,7 @@ player createDiarySubject ["controls","Controls"];
 // Police Section
 	player createDiaryRecord ["policerules",
 		[
-			"Crisis Negotiation",
+			"Krisenbewaeltigung",
 				"
 				Crisis Negotiation must be handled by a Sergeant. If one is not available, the person with the next highest rank must handle the situation.<br/><br/>
 				"
@@ -213,7 +213,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["policerules",
 		[
-			"The Federal Reserve",
+			"Bundesbank",
 				"
 				1. The Federal Reserve is illegal for civilians to enter, unless they have been given authorization. If civilians enter without authorization they are to be escorted off-site or arrested if they persist.
 				2. Helicopters flying over the Federal Reserve may be asked to leave and disabled if they refuse.<br/>
@@ -229,7 +229,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["policerules",
 		[
-			"Aviation",
+			"Luftfahrt",
 				"
 				1. No helicopter can land within city limits without authorization from the highest ranking officer online. (Exceptions being what is listed below.)<br/>
 				Kavala: The hospital helipad (037129) or docks (031128).<br/>
@@ -249,7 +249,7 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Illegal Areas", 
+			"Illegale Bereiche", 
 				"
 				1. Gang areas are not considered illegal. Thus a cop may enter without a raid, but may not restrain or stop anyone inside without probable cause/illegal activity. (Talking to the gang NPC is NOT probable cause/illegal activity.)<br/>
 				2. Do not enter an illegal area unless it is part of a raid. see Raiding/Camping.<br/>
@@ -261,7 +261,7 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Patrolling", 
+			"Streifen", 
 				"
 				1. Police may patrol the island's roads and towns searching for abandoned vehicles and criminal activity.<br/>
 				2. Patrols can be done on foot inside of a town, or in a vehicle when outside.<br/>
@@ -298,7 +298,7 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Vehicles", 
+			"Fahrzeuge", 
 				"
 				1. Vehicles in the parking lot, or are reasonably parked elsewhere should be left alone.<br/>
 				2. Vehicles that look abandoned, broken, with no driver, can be impounded.<br/>
@@ -313,23 +313,20 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["policerules",
 		[
-			"Speeding", 
+			"Geschwindigkeitslimits", 
 				"
-				The following speeds are to be enforced by the Altis Police Force for the absolute safety of the citizens of Kavala and all travelling beyond the city.<br/><br/>
+				Die geltenden Hoechstgeschwindigkeiten sind wie folgt:<br/><br/>
 				
-				Inside major cities:<br/>
-				Small roads: 50km/h<br/>
-				Main roads: 65km/h<br/>
-				Outside major cities:<br/>
-				Small roads: 80km/h<br/>
-				Main roads: 110km/h<br/><br/>
+				innerorts: 50km/h<br/>
+				auﬂerorts: 100km/h<br/>
+				Autobahn: 130km/h<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"City Protocol", 
+			"Stadtrichtlinien", 
 				"
 				1. Officers may patrol major cities - Kavala, Athira, Pyrgos and Sofia.<br/>
 				2. Officers may stop by the car shop to make sure there are no cars that need to be impounded.<br/>
@@ -343,7 +340,7 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Arresting and Ticketing",
+			"Arrest und Buﬂgelder",
 				"
 				Arresting should be done to criminals who are considered a danger to themselves or others.<br/><br/>
 
@@ -368,7 +365,7 @@ player createDiarySubject ["controls","Controls"];
 		
 	player createDiaryRecord ["policerules",
 		[
-			"Weapons", 
+			"Waffen", 
 				"
 				A cop is NEVER allowed to supply civilians with weapons. This will get you banned from the server and removed from being a cop.<br/><br/>
 
@@ -473,7 +470,7 @@ player createDiarySubject ["controls","Controls"];
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
 		[
-			"Rebel Rules",
+			"Rebellen Regeln",
 				"
 				A rebel is one who rises in armed resistance against a government. In this case it would be the police. However, due to the small amount of police compared to the possible amount of rebels, do not attack the police without a reason, please be civil and use common sense, and don't take the word rebel literally, but instead how it will make this server fun for all.<br/><br/>
 				1. A rebel must first form a gang, and then declare intentions.<br/>
@@ -486,7 +483,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Gang Rules",
+			"Gang Regeln",
 				"
 				1. Being in a gang is not illegal. Only when illegal crimes are committed.<br/>
 				2. Being in a gang area is not illegal. Only when partaking in illegal activities.<br/>
@@ -499,20 +496,21 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Illegal Vehicles",
+			"Illegale Fahrzeuge",
 				"
 				A civilian in control of the following prohibited vehicles is subject to the consequences defined in the unauthorized control of a prohibited vehicle law.<br/><br/>
 
 				1. Ifrit<br/>
 				2. Speedboat<br/>
-				3. Hunter<br/>
-				4. Police Offroad<br/>
+				3. Polizei Hunter<br/>
+				4. Polizei Offroad<br/>
+				5. Polizei Strider<br/>
 				"
 		]
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Illegal Weapons",
+			"Illegale Waffen",
 				"
 				A civilian in possession of the following is subject to the consequences as defined in the illegal possession of a firearm law.<br/><br/>
 
@@ -530,11 +528,11 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Illegal Items",
+			"Illegale Items",
 				"
-				The following items are illegal to posses:<br/><br/>
-				1. Turtle<br/>
-				2. Cocaine<br/>
+				Die folgenden Sachen sind illegal wenn im Besitz:<br/><br/>
+				1. Schildkroetenfleisch<br/>
+				2. Kokain<br/>
 				3. Heroin<br/>
 				4. Cannabis<br/>
 				5. Marijuana<br/><br/>
@@ -549,14 +547,20 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"",
 				"
-				Y: Open Player Menu<br/>
-				U: Lock and unlock cars<br/>
-				F: Cop Siren (if cop)<br/>
-				T: Vehicle Trunk<br/>
-				Left Shift + R: Restrain (Cop Only)<br/>
+				Allgemein:<br/>
+				Y: Spielermenue oeffnen<br/>
+				U: Fahrzeug auf/zuschlieﬂen<br/>
+				T: Fahrzeug Kofferraum<br/>
+				Zivilist:<br/>
+				1: Shortcut fuer Spitzhacke
+				Left Shift + V: Ergeben
+				Left Shift + H: Waffe holstern
 				Left Shift + G: Knock out / stun (Civ Only, used for robbing them)<br/>
 				Left Windows: Main Interaction key which is used for picking up items/money, interacting with cars (repair,etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
-				Left Shift + L: Activates cop siren lights (as a cop).<br/>
+				Polizei:<br/>
+				F: Polizei Sondersignal<br/>
+				Left Shift + L: Rundumleuchten<br/>
+				Left Shift + R: Festnehmen<br/>				
 				"
 		]
 	];
