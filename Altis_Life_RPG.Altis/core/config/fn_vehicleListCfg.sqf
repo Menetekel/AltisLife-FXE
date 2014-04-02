@@ -200,6 +200,8 @@ switch (_shop) do
 	case "cop_car_1":
 	{
 		_return set[count _return,
+		["C_Hatchback_01_F",1]];
+		_return set[count _return,
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
 		["C_SUV_01_F",20000]];
@@ -212,6 +214,8 @@ switch (_shop) do
 	
 	case "cop_car_2":
 	{
+		_return set[count _return,
+		["C_Hatchback_01_F",1]];
 		_return set[count _return,
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
@@ -226,6 +230,8 @@ switch (_shop) do
 	case "cop_car_3":
 	{
 		_return set[count _return,
+		["C_Hatchback_01_F",1]];
+		_return set[count _return,
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
 		["C_SUV_01_F",20000]];
@@ -238,6 +244,8 @@ switch (_shop) do
 	
 	case "cop_car_5":
 	{
+		_return set[count _return,
+		["C_Hatchback_01_F",1]];
 		_return set[count _return,
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,

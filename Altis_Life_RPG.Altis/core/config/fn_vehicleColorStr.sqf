@@ -41,6 +41,7 @@ switch (_vehicle) do
 			case 5: {_color = "White"};
 			case 6: {_color = "Grey"};
 			case 7: {_color = "Black"};
+			case 8: {_color = "Ordnungsamt"};
 		};
 	};
 	
@@ -67,6 +68,8 @@ switch (_vehicle) do
 			case 2: {_color = "Silver";};
 			case 3: {_color = "Orange";};
 			case 4: {_color = "Cop";};
+			case 5: {_color = "Polizei HIGH";};
+			case 6: {_color = "Polizei LOW";};
 		};
 	};
 	
@@ -131,6 +134,7 @@ switch (_vehicle) do
 			case 11: {_color = "Vrana"};
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
+			case 14: {_color = "Polizei"};
 		};
 	};
 	
@@ -152,6 +156,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Regular"};
 			case 1: {_color = "Black"};
+			case 2: {_color = "Polizei Black"};
 		};
 	};
 
@@ -160,8 +165,9 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Regular"};
+			case 0: {_color = "Polizei Black"};
 			case 1: {_color = "Black Polizei"};
+			case 2: {_color = "ArmA"};
 		};
 	};
 	
