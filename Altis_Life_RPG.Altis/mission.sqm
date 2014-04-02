@@ -2665,7 +2665,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false;  this addAction[""Bootshaendler"",life_fnc_vehicleShop,""cop_ship_1""]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false;  this addAction[""Polizei Boots-Shop"",life_fnc_vehicleShop,""cop_ship_1""]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Ship"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_ship_1"";  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item48
 				{
@@ -2676,7 +2676,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Helicopter Shop"",life_fnc_vehicleShop,""cop_air_1""]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Polizei Heli-Shop"",life_fnc_vehicleShop,""cop_air_1""]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item49
 				{
@@ -2687,7 +2687,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false;  this addAction[""Fahrzeughaendler"",life_fnc_vehicleShop,""cop_car_1""]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false;  this addAction[""Polizei Car-Shop"",life_fnc_vehicleShop,""cop_car_1""]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item50
 				{
@@ -7962,7 +7962,6 @@ class Mission
 			position[]={16990.332,16.389584,12866.398};
 			name="car1_2";
 			type="c_car";
-			colorName="ColorWhite";
 			angle=0.011481642;
 		};
 		class Item38
@@ -7971,7 +7970,6 @@ class Mission
 			name="Atm1_1_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-14.744699;
 		};
 		class Item39
 		{
@@ -8153,7 +8151,6 @@ class Mission
 			name="car1_2_1_1";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=359.19183;
 		};
 		class Item62
 		{
@@ -8161,7 +8158,6 @@ class Mission
 			name="Atm1_1_1_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-14.744699;
 		};
 		class Item63
 		{
@@ -8178,7 +8174,6 @@ class Mission
 			text="Lizenz-Buero";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=-1.9030067;
 		};
 		class Item65
 		{
@@ -8195,7 +8190,6 @@ class Mission
 			text="Tauchladen";
 			type="mil_box";
 			colorName="ColorOrange";
-			angle=-144.45552;
 		};
 		class Item67
 		{
@@ -8251,7 +8245,6 @@ class Mission
 			text="DP 17";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-140.186;
 		};
 		class Item74
 		{
@@ -8268,7 +8261,6 @@ class Mission
 			text="DP 18";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=165.897;
 		};
 		class Item76
 		{
@@ -8277,7 +8269,6 @@ class Mission
 			text="DP 13";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=43.241501;
 		};
 		class Item77
 		{
@@ -8302,7 +8293,6 @@ class Mission
 			text="DP 15";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-61.743599;
 		};
 		class Item80
 		{
@@ -8319,7 +8309,6 @@ class Mission
 			text="DP 22";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-62.148312;
 		};
 		class Item82
 		{
@@ -8328,7 +8317,6 @@ class Mission
 			text="DP 24";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=144.67558;
 		};
 		class Item83
 		{
@@ -8337,7 +8325,6 @@ class Mission
 			text="DP 23";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-44.569088;
 		};
 		class Item84
 		{
@@ -8370,7 +8357,6 @@ class Mission
 			text="DP 9";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=86.109383;
 		};
 		class Item88
 		{
@@ -8379,7 +8365,6 @@ class Mission
 			text="DP 8";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=122.0182;
 		};
 		class Item89
 		{
@@ -8412,7 +8397,6 @@ class Mission
 			text="DP 25";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-25.325846;
 		};
 		class Item93
 		{
@@ -8429,7 +8413,6 @@ class Mission
 			text="Drogendealer";
 			type="mil_dot";
 			colorName="ColorOrange";
-			angle=-57.933056;
 		};
 		class Item95
 		{
@@ -8439,7 +8422,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=154.474;
 		};
 		class Item96
 		{
@@ -8449,7 +8431,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-10.0823;
 		};
 		class Item97
 		{
@@ -8459,7 +8440,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-33.9603;
 		};
 		class Item98
 		{
@@ -8469,7 +8449,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-119.016;
 		};
 		class Item99
 		{
@@ -8479,7 +8458,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-286.052;
 		};
 		class Item100
 		{
@@ -8489,7 +8467,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-415.91299;
 		};
 		class Item101
 		{
@@ -8499,7 +8476,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-415.91299;
 		};
 		class Item102
 		{
@@ -8509,7 +8485,6 @@ class Mission
 			alpha="0";
 			type="mil_dot";
 			colorName="ColorUnknown";
-			angle=-415.91299;
 		};
 		class Item103
 		{
@@ -8542,7 +8517,6 @@ class Mission
 			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=3.7905569;
 		};
 		class Item107
 		{
@@ -8559,7 +8533,6 @@ class Mission
 			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-87.714554;
 		};
 		class Item109
 		{
@@ -8568,7 +8541,6 @@ class Mission
 			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-9.3215389;
 		};
 		class Item110
 		{
@@ -8671,7 +8643,6 @@ class Mission
 			text="Lizenz-Buero";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=-1.9030067;
 		};
 		class Item124
 		{
@@ -8723,7 +8694,6 @@ class Mission
 			text="DP 20";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=-89.313202;
 		};
 		class Item131
 		{
@@ -8779,7 +8749,6 @@ class Mission
 			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=3.7905569;
 		};
 		class Item138
 		{
@@ -8836,7 +8805,6 @@ class Mission
 			text="Lizenz-Buero";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=-1.9030067;
 		};
 		class Item145
 		{
@@ -8853,7 +8821,6 @@ class Mission
 			text="Survival-Shop";
 			type="c_unknown";
 			colorName="ColorGreen";
-			angle=-0.67126209;
 		};
 		class Item147
 		{
@@ -8862,7 +8829,6 @@ class Mission
 			text="Lizenz-Buero";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=30.320122;
 		};
 		class Item148
 		{
@@ -8905,7 +8871,6 @@ class Mission
 			text="Diamanten Haendler";
 			type="b_unknown";
 			colorName="ColorOrange";
-			angle=0.26148701;
 		};
 		class Item153
 		{
@@ -8914,7 +8879,6 @@ class Mission
 			text="Glas Haendler";
 			type="b_unknown";
 			colorName="ColorOrange";
-			angle=-1.95401;
 		};
 		class Item154
 		{
@@ -8923,7 +8887,6 @@ class Mission
 			text="Metall Haendler";
 			type="b_unknown";
 			colorName="ColorOrange";
-			angle=-0.60203898;
 		};
 		class Item155
 		{
@@ -8932,7 +8895,6 @@ class Mission
 			text="Sand Verarbeitung";
 			type="mil_triangle";
 			colorName="ColorBrown";
-			angle=-80.305901;
 		};
 		class Item156
 		{
@@ -8999,19 +8961,17 @@ class Mission
 		{
 			position[]={9326.4922,14.638341,11912.618};
 			name="gun_store_1";
-			text="Gun Store";
+			text="Waffenladen";
 			type="loc_Bunker";
 			colorName="ColorRed";
-			angle=7.2259879;
 		};
 		class Item165
 		{
 			position[]={16340.104,24.965635,17266.721};
 			name="gun_store_1_1";
-			text="Gun Store";
+			text="Waffenladen";
 			type="loc_Bunker";
 			colorName="ColorRed";
-			angle=62.195702;
 		};
 		class Item166
 		{
@@ -9110,7 +9070,6 @@ class Mission
 			name="civ_gar_1_1";
 			text="Garage";
 			type="o_service";
-			angle=108.01333;
 		};
 		class Item179
 		{
@@ -9125,7 +9084,6 @@ class Mission
 			name="civ_gar_1_2";
 			text="Garage";
 			type="o_service";
-			angle=168.39328;
 		};
 		class Item181
 		{
@@ -9140,7 +9098,6 @@ class Mission
 			name="civ_gar_1_3";
 			text="Garage";
 			type="o_service";
-			angle=136.74835;
 		};
 		class Item183
 		{
@@ -9181,7 +9138,6 @@ class Mission
 			text="Markt";
 			type="c_unknown";
 			colorName="ColorGreen";
-			angle=127.88971;
 		};
 		class Item188
 		{
@@ -9252,7 +9208,6 @@ class Mission
 			text="Geldautomat";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=150.42087;
 		};
 		class Item197
 		{
@@ -9261,7 +9216,6 @@ class Mission
 			text="Tauchladen";
 			type="mil_box";
 			colorName="ColorOrange";
-			angle=-144.45552;
 		};
 		class Item198
 		{
@@ -9360,7 +9314,6 @@ class Mission
 			text="Eisen Haendler";
 			type="b_unknown";
 			colorName="ColorOrange";
-			angle=-0.60203898;
 		};
 		class Item210
 		{
