@@ -19,7 +19,7 @@ _control = _display displayCtrl 2601;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
-_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 has given you a ticket for $%2",name _cop,_val];
+_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 hat dir ein Bußgeld in Höhe von $%2 ausgestellt!",name _cop,_val];
 
 [] spawn
 {
