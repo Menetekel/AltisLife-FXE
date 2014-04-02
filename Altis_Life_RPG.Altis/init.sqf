@@ -33,5 +33,7 @@ if(!StartProgress) then
 	[8,true,false] execFSM "core\fsm\core_time.fsm";
 };
 StartProgress = true;
-
+//Init admintools (temporary)
 [] execVM "admintools\loop.sqf";
+// Init automatically saving gear
+[] spawn life_fnc_autoSave;
