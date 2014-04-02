@@ -7890,7 +7890,7 @@ class Mission
 		{
 			position[]={8440.3506,49.484863,12756.805};
 			name="cocaine processing";
-			text="Kokain-Verarbeitung";
+			text="Kokain Verarbeitung";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 		};
