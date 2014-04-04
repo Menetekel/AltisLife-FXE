@@ -161,11 +161,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["FXE\textures\strider_polizei.jpg","cop"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
-			["#(ai,64,64,1)Fresnel(0.3,3)","cop"],
-			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"]
+			["FXE\textures\strider_polizei.jpg","cop"]
 		];
 	};
 	

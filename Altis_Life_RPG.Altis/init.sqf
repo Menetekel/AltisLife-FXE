@@ -38,8 +38,4 @@ StartProgress = true;
 // Init automatically saving gear
 [] spawn life_fnc_autoSave;
 //Disco cleanup
-onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
-//Mapadd
-if (isServer) then {
-[] execVM "FXE\highway_cp.sqf";
-};
+//onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
