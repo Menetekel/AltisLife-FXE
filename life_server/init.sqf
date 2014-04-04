@@ -20,6 +20,7 @@ life_animals_array = [];
 
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
+//[] execVM "\life_server\initHousing.sqf";
 //[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
 
 [] spawn TON_fnc_cleanup;
@@ -78,3 +79,8 @@ publicVariable "life_fnc_fedSuccess";
 		} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
 	};
 } foreach allUnits;
+
+//Map Additions
+if (isServer) then {
+call compile preProcessFileLineNumbers "\life_server\map\highway_cp.sqf";
+};
