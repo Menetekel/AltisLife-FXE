@@ -5,7 +5,7 @@
 	Description:
 	Picks up money
 */
-if((time - life_action_delay) < 1.5) exitWith {hint "You can't rapidly use action keys!"};
+if((time - life_action_delay) < 1.5) exitWith {hint "Du kannst die Action-Taste nicht spamen!"};
 private["_obj","_val"];
 _obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _val = (_obj getVariable "item") select 1;
@@ -27,7 +27,7 @@ if(!isNil {_val}) then
 	};
 	
 	player playmove "AinvPknlMstpSlayWrflDnon";
-	titleText[format["You have picked up $%1",[_val] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast €%1 aufgehoben! Du Glückspilz!",[_val] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _val;
 	life_action_delay = time;
 };

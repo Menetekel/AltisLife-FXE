@@ -61,6 +61,6 @@ for "_i" from 0 to (count life_vehicles)-1 do
 
 if(((lbSize _vehicles)-1) == -1) then
 {
-	_vehicles lbAdd "You don't own any vehicles";
+	_vehicles lbAdd "Du besitzt kein Fahrzeug!";
 	_vehicles lbSetData [(lbSize _vehicles)-1,str(ObjNull)];
 };

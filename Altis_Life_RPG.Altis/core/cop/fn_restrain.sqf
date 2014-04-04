@@ -21,12 +21,12 @@ if(isNull _cop) exitWith {};
 		if(!(player getVariable["restrained",FALSE])) exitWith {};
 		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && vehicle player == player) exitWith {
 			player setVariable["restrained",FALSE,TRUE];
-			titleText["You have been released automatically for excessive restrainment time","PLAIN"];
+			titleText["Deine Handschellen wurden gelöst.","PLAIN"];
 		};
 	};
 };
 if((player getVariable["surrender",FALSE])) then { player setVariable["surrender",FALSE,TRUE]; player switchMove ""; };
-titleText[format["You have been restrained by %1",name _cop],"PLAIN"];
+titleText[format["Dir wurden von %1 Handschellen angelegt.",name _cop],"PLAIN"];
 				
 while {player getVariable "restrained"} do
 {
@@ -54,5 +54,5 @@ while {player getVariable "restrained"} do
 		
 if(alive player) then
 {
-	titleText["You have been released, press V to get out of restrainment.","PLAIN"];
+	titleText["Du wurdest freigelassen. Drücke 'V' um die Handschellen zu lösen.","PLAIN"];
 };

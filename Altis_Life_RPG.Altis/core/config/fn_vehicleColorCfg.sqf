@@ -48,7 +48,6 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["FXE\textures\offroad_polizei.jpg","cop"]
 		];
@@ -78,9 +77,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
-			["FXE\textures\suv_high.jpg","cop"],
-			["FXE\textures\suv_low.jpg","cop"]
+			["FXE\textures\suv_polizei.jpg","cop"]
 		];
 	};
 	
@@ -155,9 +152,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"],
-			["FXE\textures\hunter_polizei.jpg","cop"]
+			["FXE\textures\hunter_polizei.jpg","cop"],
+			["FXE\textures\hunter_sek_1.jpg","cop","FXE\textures\hunter_sek_2.jpg"]
 		];
 	};
 //FXE Strider
@@ -167,6 +163,8 @@ switch (_vehicle) do
 		[
 			["FXE\textures\strider_polizei.jpg","cop"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
+			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
+			["#(ai,64,64,1)Fresnel(0.3,3)","cop"],
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"]
 		];
 	};

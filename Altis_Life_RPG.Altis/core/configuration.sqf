@@ -63,6 +63,7 @@ life_eat_donuts = 30;
 life_net_dropped = false;
 life_hit_explosive = false;
 life_siren_active = false;
+life_siren2_active = false; //SIREN2 YELP
 life_bank_fail = false;
 life_use_atm = true;
 life_is_arrested = false;
@@ -84,13 +85,13 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 7000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_atmcash = 5000; //Starting Bank Money
+		life_paycheck = 750; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 3000; //Starting Bank Money
-		life_paycheck = 350; //Paycheck Amount
+		life_atmcash = 5000; //Starting Bank Money
+		life_paycheck = 750; //Paycheck Amount
 	};
 };
 

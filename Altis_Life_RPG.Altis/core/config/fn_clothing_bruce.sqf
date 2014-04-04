@@ -18,19 +18,19 @@ switch (_filter) do
 	case 0:
 	{
 		[
-		["U_C_Poloshirt_blue","Poloshirt Blue",250],
-		["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
-		["U_C_Poloshirt_redwhite","Poloshirt Red/White",150],
-		["U_C_Poloshirt_salmon","Poloshirt Salmon",175],
-		["U_C_Poloshirt_stripped","Poloshirt stripped",125],
-		["U_C_Poloshirt_tricolour","Poloshirt Tricolor",350],
-		["U_C_Poor_2","Rag tagged clothes",250],
-		["U_IG_Guerilla2_2","Green stripped shirt & Pants",650],
-		["U_IG_Guerilla3_1","Brown Jacket & Pants",735],
-		["U_IG_Guerilla2_3","The Outback Rangler",1200],
-		["U_C_HunterBody_grn","The Hunters Look",1500],
-		["U_C_WorkerCoveralls","Mechanic Coveralls",2500],
-		["U_OrestesBody","Surfing On Land",1100]
+		["U_C_Poloshirt_blue","Poloshirt Blau",250],
+		["U_C_Poloshirt_burgundy","Poloshirt Burgunder",275],
+		["U_C_Poloshirt_redwhite","Poloshirt Rot/weiß",150],
+		["U_C_Poloshirt_salmon","Poloshirt Lachs",175],
+		["U_C_Poloshirt_stripped","Poloshirt gestreift",125],
+		["U_C_Poloshirt_tricolour","Poloshirt mehrfarbig",350],
+		["U_C_Poor_2","Gelumpte Kleidung",250],
+		["U_IG_Guerilla2_2","Grüngestreift & Hose",650],
+		["U_IG_Guerilla3_1","Braune Jacke & Hose",735],
+		["U_IG_Guerilla2_3","Der Outback Rangler",1200],
+		["U_C_HunterBody_grn","Der Hunters Look",1500],
+		["U_C_WorkerCoveralls","Mechanik Overalls",2500],
+		["U_OrestesBody","Surferboy",1100]
 		];
 	};
 	
@@ -38,15 +38,15 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_Bandanna_camo","Camo Bandanna",120],
+			["H_Bandanna_camo","Tarn Bandanna",120],
 			["H_Bandanna_surfer","Surfer Bandanna",130],
-			["H_Bandanna_gry","Grey Bandanna",150],
+			["H_Bandanna_gry","Grau Bandanna",150],
 			["H_Bandanna_cbr",nil,165],
 			["H_Bandanna_surfer",nil,135],
 			["H_Bandanna_khk","Khaki Bandanna",145],
-			["H_Bandanna_sgg","Sage Bandanna",160],
+			["H_Bandanna_sgg","Salbei Bandanna",160],
 			["H_StrawHat","Straw Fedora",225],
-			["H_BandMask_blk","Hat & Bandanna",300],
+			["H_BandMask_blk","Hut & Bandanna",300],
 			["H_Booniehat_tan",nil,425],
 			["H_Hat_blue",nil,310],
 			["H_Hat_brown",nil,276],

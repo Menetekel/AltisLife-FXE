@@ -24,7 +24,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
 			default
 			{
 				["Altis Cop Shop",
@@ -51,8 +51,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
+			case (__GETC__(life_coplevel) < 2): {"Du hast nicht den erforderlichen Rank!"};
 			default
 			{
 				["Altis Patrol Officer Shop",
@@ -76,8 +76,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
+			case (__GETC__(life_coplevel) < 3): {"Du hast nicht den erforderlichen Rank!"};
 			default
 			{
 				["Altis Sergeant Officer Shop",
@@ -100,8 +100,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a cop!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (playerSide != civilian): {"Du bist kein Polizist!"};
+			case (!license_civ_rebel): {"Du hast keien Rebelen-Lizenz!"};
 			default
 			{
 				["Mohammed's Jihadi Shop",
@@ -129,8 +129,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a cop!"};
-			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			case (playerSide != civilian): {"Du bist kein Polizist!"};
+			case (!license_civ_gun): {"Du hast keine Schusswaffen-Lizenz!"};
 			default
 			{
 				["Billy Joe's Firearms",
@@ -155,7 +155,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (__GETC__(life_donator) == 0): {"You are not a donator!"};
+			case (__GETC__(life_donator) == 0): {"Du bist kein Spender!"};
 			case (__GETC__(life_donator) == 1):
 			{
 				["STS Donator Shop Tier 1",

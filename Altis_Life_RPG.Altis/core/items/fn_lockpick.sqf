@@ -13,7 +13,7 @@ if(isNull _curTarget) exitWith {}; //Bad type
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
 if(player distance _curTarget > _distance) exitWith {}; //Too far
 _isVehicle = if((_curTarget isKindOf "LandVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
-if(_isVehicle && _curTarget in life_vehicles) exitWith {hint "This vehicle is already in your key-chain."};
+if(_isVehicle && _curTarget in life_vehicles) exitWith {hint "Du hast für dieses Fahrzeug bereits einen Schlüssel."};
 
 //More error checks
 if(!_isVehicle && !isPlayer _curTarget) exitWith {};
@@ -54,8 +54,8 @@ while {true} do
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
-if(!isNil "_badDistance") exitWith {titleText["You got to far away from the target.","PLAIN"]; life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;};
+if(!isNil "_badDistance") exitWith {titleText["Du bist zuweit weg!","PLAIN"]; life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen.","PLAIN"]; life_action_inUse = false;};
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 
 life_action_inUse = false;
@@ -67,12 +67,12 @@ if(!_isVehicle) then {
 } else {
 	_dice = random(100);
 	if(_dice < 30) then {
-		titleText["You now have keys to this vehicle.","PLAIN"];
+		titleText["Du hast jetzt den Schlüssel für das Fahrzeug!.","PLAIN"];
 		life_vehicles set[count life_vehicles,_curTarget];
 		[[getPlayerUID player,name player,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {
 		[[getPlayerUID player,name player,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		[[0,format["%1 was seen trying to lockpick a car.",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-		titleText["The lockpick broke.","PLAIN"];
+		[[0,format["%1 hat beobachtet als jemand ein Fahrzeug knacken wollte.",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		titleText["Der Dietrich wurde zerstört.","PLAIN"];
 	};
 };

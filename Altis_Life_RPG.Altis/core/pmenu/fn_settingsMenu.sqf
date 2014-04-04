@@ -7,7 +7,7 @@
 */
 if(isNull (findDisplay 2900)) then
 {
-	if(!createDialog "TAW_VD") exitWith {hint "Something went wrong, the menu won't open?"};
+	if(!createDialog "TAW_VD") exitWith {hint "Etwas ist schiefgelaufen, das Menü läßt sich nicht öffnen."};
 };
 
 disableSerialization;
@@ -38,10 +38,10 @@ if(isNil "life_sidechat") then
 if(!life_sidechat) then
 {
 	_side ctrlSetTextColor [0,1,0,1];
-	_side ctrlSetText "Sidechat ON";
+	_side ctrlSetText "Sidechat AN";
 }
 	else
 {
 	_side ctrlSetTextColor [1,0,0,1];
-	_side ctrlSetText "Sidechat OFF";
+	_side ctrlSetText "Sidechat AUS";
 };

@@ -27,7 +27,7 @@
 		</Key>
 		<Key ID="STR_Global_Settings">
 			<Original>Settings</Original>
-			<German>Einstellungen</German>
+			<German>Einst.</German>
 		</Key>
 		<Key ID="STR_Global_BuyPerm">
 			<Original>Buy Permanently</Original>
@@ -63,7 +63,7 @@
 		</Key>
 		<Key ID="STR_ATM_Transfer">
 			<Original>Transfer</Original>
-			<German>Überweisung</German>
+			<German>Transfer</German>
 		</Key>
 	</Package>
 	<Package name="Cell_Phone">
@@ -73,27 +73,27 @@
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
 			<Original>Message To Send:</Original>
-			<German>Nachricht senden an:</German>
+			<German>Nachricht eingeben:</German>
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
-			<German>Nachricht:</German>
+			<German>Senden an:</German>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
-			<German>Senden an Polizei</German>
+			<German>An Polizei</German>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
-			<German>Senden an Admin</German>
+			<German>An Admin</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
-			<German>Admin Nachricht</German>
+			<German>Als Admin</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMSGAll">
 			<Original>Admin Msg All</Original>
-			<German>Admin Txt. an Alle</German>
+			<German>Admin an alle</German>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">
@@ -153,7 +153,7 @@
 		</Key>
 		<Key ID="STR_Gang_Browse">
 			<Original>Browse</Original>
-			<German>Blättern</German>
+			<German>Anzeigen</German>
 		</Key>
 	</Package>
 	<Package name="Garage_Menu">
@@ -163,11 +163,11 @@
 		</Key>
 		<Key ID="STR_Garage_GetVehicle">
 			<Original> Get Vehicle</Original>
-			<German>Fahrzeug nehmen</German>
+			<German>Auslagern</German>
 		</Key>
 		<Key ID="STR_Garage_SellVehicle">
 			<Original>Sell Vehicle</Original>
-			<German>Fahrzeug verkaufen</German>
+			<German>Verkaufen</German>
 		</Key>
 		<Key ID="STR_Garage_SellPrice">
 			<Original>Sell Price</Original>
@@ -183,7 +183,7 @@
 		</Key>
 		<Key ID="STR_Garage_GoodConnection">
 			<Original>Good Connection</Original>
-			<German>Gute Verbindung</German>
+			<German></German>
 		</Key>
 		<Key ID="STR_Garage_CashError">
 			<Original>You don't have $%1 in your bank account</Original>
@@ -197,15 +197,15 @@
 	<Package name="Key_Chain">
 		<Key ID="STR_Keys_Title">
 			<Original>Key Chain - Current List of Keys</Original>
-			<German>Schlüssel - Vorhandene Schlüsselliste</German>
+			<German>Vorhandene Keys</German>
 		</Key>
 		<Key ID="STR_Keys_DropKey">
 			<Original>Drop Key</Original>
-			<German>Schlüssel wegwerfen</German>
+			<German>Key drop</German>
 		</Key>
 		<Key ID="STR_Keys_GiveKey">
 			<Original>Give Key</Original>
-			<German>Schlüssel geben</German>
+			<German>Key geben</German>
 		</Key>
 	</Package>
 	<Package name="Player_Menu">
@@ -215,7 +215,7 @@
 		</Key>
 		<Key ID="STR_PM_cItems">
 			<Original>Current Items</Original>
-			<German>Aktuelle Sachen</German>
+			<German>Inventar</German>
 		</Key>
 		<Key ID="STR_PM_Licenses">
 			<Original>Licenses</Original>
@@ -223,7 +223,7 @@
 		</Key>
 		<Key ID="STR_PM_MoneyStats">
 			<Original>Money Stats</Original>
-			<German>Geld Statistik</German>
+			<German>Bankkonto</German>
 		</Key>
 		<Key ID="STR_PM_MyGang">
 			<Original>My Gang</Original>
@@ -231,7 +231,7 @@
 		</Key>
 		<Key ID="STR_PM_WantedList">
 			<Original>Wanted List</Original>
-			<German>Gesuchten Liste</German>
+			<German>Wanted</German>
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Cell Phone</Original>
@@ -239,7 +239,7 @@
 		</Key>
 		<Key ID="STR_PM_KeyChain">
 			<Original>Key Chain</Original>
-			<German>Schlüsselliste</German>
+			<German>Key</German>
 		</Key>
 		<Key ID="STR_PM_AdminMenu">
 			<Original>Admin Menu</Original>
@@ -247,13 +247,13 @@
 		</Key>
 		<Key ID="STR_PM_SyncData">
 			<Original>Sync Data</Original>
-			<German>Daten sichern</German>
+			<German>Speichern</German>
 		</Key>
 	</Package>
 	<Package name="Settings_Menu">
 		<Key ID="STR_SM_Title">
 			<Original>Settings Menu</Original>
-			<German>Einstellungen</German>
+			<German>Einst.</German>
 		</Key>
 		<Key ID="STR_SM_onFoot">
 			<Original>On Foot:</Original>
@@ -277,7 +277,7 @@
 		</Key>
 		<Key ID="STR_SM_ToolTip3">
 			<Original>View distance while in a air vehicle</Original>
-			<German>Sichtweite im Luftfahrzeug/German>
+			<German>Sichtweite im Luftfahrzeug</German>
 			
 		</Key>
 		<Key ID="STR_SM_PlayerTags">
@@ -370,7 +370,7 @@
 		</Key>
 		<Key ID="STR_Trunk_Store">
 			<Original>Store</Original>
-			<German>Lagern</German>
+			<German>Einlagern</German>
 		</Key>
 	</Package>
 	<Package name="Wanted_Menu">
@@ -416,7 +416,7 @@
 	<Package name="Notifications">
 		<Key ID="STR_NOTF_NE_1">
 			<Original>You do not have $%1 for a %2</Original>
-			<German>Du hast nicht genug €%1 für ein %2</German>
+			<German>Du hast keine €%1 für ein(e) %2</German>
 		</Key>
 		<Key ID="STR_NOTF_B_1">
 			<Original>You bought a %1 for $%2</Original>
@@ -440,16 +440,16 @@
 		</Key>
 		<Key ID="STR_NOTF_NetDrop">
 			<Original>Dropping fishing net....</Original>
-			<German>Fischernetz fallen gelassen</German>
+			<German>Werfe Fischernetz aus..</German>
 		</Key>
 		<Key ID="STR_NOTF_NetDropFail">
 			<Original>Didn't catch any fish..</Original>
-			<German>Kein Fisch gefangen</German>
+			<German>Kein Fisch gefangen.</German>
 			
 		</Key>
 		<Key ID="STR_NOTF_NetUp">
 			<Original>Fishing net pulled up.</Original>
-			<German>Fischernetz hochgezogen</German>
+			<German>Fischernetz eingezogen.</German>
 		</Key>
 		<Key ID="STR_NOTF_InvFull">
 			<Original>Your inventory space is full.</Original>
@@ -467,11 +467,11 @@
 		</Key>
 		<Key ID="STR_pInAct_PutInCar">
 			<Original>Put in vehicle</Original>
-			<German>In Auto laden</German>
+			<German>In Fahrzeug setzen</German>
 		</Key>
 		<Key ID="STR_pInAct_Unrestrain">
 			<Original>Un-Restrain</Original>
-			<German>Un-Restrain</German>
+			<German>Freilassen</German>
 		</Key>
 		<Key ID="STR_pInAct_checkLicenses">
 			<Original>Check Licenses</Original>
@@ -479,7 +479,7 @@
 		</Key>
 		<Key ID="STR_pInAct_SearchPlayer">
 			<Original>Search Player</Original>
-			<German>Suche Spieler</German>
+			<German>Durchsuchen</German>
 		</Key>
 		<Key ID="STR_pInAct_StopEscort">
 			<Original>Stop Escorting</Original>
@@ -487,41 +487,41 @@
 		</Key>
 		<Key ID="STR_pInAct_Escort">
 			<Original>Escort Player</Original>
-			<German>Spieler Begleiten</German>
+			<German>Eskortieren</German>
 		</Key>
 		<Key ID="STR_pInAct_TicketBtn">
 			<Original>Ticket Player</Original>
-			<German>Spieler Strafzettel</German>
+			<German>Strafzettel</German>
 		</Key>
 		<Key ID="STR_pInAct_Arrest">
 			<Original>Send to jail</Original>
-			<German>Ins Gefägnis stecken</German>
+			<German>In den Knast</German>
 		</Key>
 	</Package>
 	<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">
 			<Original>Vehicle Interaction Menu</Original>
-			<German>Auto Interaktions Menü</German>
+			<German>Fahrzeug Menü</German>
 		</Key>
 		<Key ID="STR_vInAct_Repair">
 			<Original>Repair Vehicle</Original>
-			<German>Auto reparieren</German>
+			<German>Reparieren</German>
 		</Key>
 		<Key ID="STR_vInAct_Registration">
 			<Original>Registration</Original>
-			<German>Anmeldung</German>
+			<German>Fahrzeugpapiere</German>
 		</Key>
 		<Key ID="STR_vInAct_SearchVehicle">
 			<Original>Search Vehicle</Original>
-			<German>Suche Auto</German>
+			<German>Durchsuchen</German>
 		</Key>
 		<Key ID="STR_vInAct_PullOut">
 			<Original>Pullout Players</Original>
-			<German>Spieler herausziehen</German>
+			<German>Herausziehen</German>
 		</Key>
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
-			<German>Auto Beschlagnahmen</German>
+			<German>Beschlagnahmen</German>
 		</Key>
 	</Package>
 </Project>

@@ -1,6 +1,6 @@
 author = "TAW_Tonic with mods by FXE";
-onLoadName = "Altis Life RPG FXE-enhanced";
-onLoadMission = "A RPG game mode developed by TAW_Tonic and modified by Team FXE == www.PapaBrenner.de ==";
+onLoadName = "Altis Life RPG FXE-Edition";
+onLoadMission = "A RPG game mode developed by TAW_Tonic and modified by Team FXE";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 10;
@@ -38,16 +38,34 @@ class CfgFunctions
 class CfgSounds
 {
   sounds[] = {};
-  class SirenLong
+	class SirenLong
   {
     name = "SirenLong";
     sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
     titles[] = {};
   };
+  class Yelp
+  {
+	name = "Yelp";
+	sound[] = {"FXE\Yelp.ogg", 1.0, 1};
+	titles[] = {};
+  };
     class tazersound
   {
     name = "Tazersound";
     sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+    titles[] = {};
+  };
+    class car_lock
+  {
+    name = "car_lock";
+    sound[] = {"FXE\car_lock.ogg", 1.0, 1};
+    titles[] = {};
+  };
+ class unlock
+  {
+    name = "unlock";
+    sound[] = {"FXE\unlock.ogg", 1.0, 1};
     titles[] = {};
   };
 };

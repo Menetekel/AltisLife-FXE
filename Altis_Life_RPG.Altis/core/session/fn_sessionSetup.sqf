@@ -10,6 +10,6 @@
 	without this process being completed.
 */
 waitUntil {!isNull player && player == player};
-cutText["Contacting server for player information...","BLACK FADED"];
+cutText["Kontaktiere Server für Spielerinformationen...","BLACK FADED"];
 0 cutFadeOut 9999999;
 [[player,playerSide,getPlayerUID player],"TON_fnc_query",false,false] spawn life_fnc_MP;

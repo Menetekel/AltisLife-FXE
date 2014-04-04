@@ -96,14 +96,14 @@ switch(life_veh_shop) do
 	{
 		_sp = getMarkerPos "fed_car_1";
 		_dir = markerDir "fed_car_1";
-		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "There is a vehicle on the spawn point."};
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Es steht ein Fahrzeug auf dem Spawn-Platz."};
 	};
 	
 	case "fed_air":
 	{
 		_sp = getMarkerPos "fed_air_1";
 		_dir = markerDir "fed_air_1";
-		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "There is a vehicle on the spawn point."};
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Es steht ein Fahrzeug auf dem Spawn-Platz."};
 	};
 	
 	case "civ_ship_1":
@@ -211,17 +211,17 @@ switch(life_veh_shop) do
 };
 _index = lbCurSel 2302;
 _veh = lbData[2302,_index];
-if(_veh == "B_G_Offroad_01_armed_F" OR _veh == "B_MRAP_01_hmg_F") exitWith {hint "This vehicle cannot be bought permanently";};
-if(!([_veh] call life_fnc_vehShopLicenses)) exitWith {hint "You do not have the required license!"};
+if(_veh == "B_G_Offroad_01_armed_F" OR _veh == "B_MRAP_01_hmg_F") exitWith {hint "Dieses Fahrzeug kann nicht Permanent gekauft werden!";};
+if(!([_veh] call life_fnc_vehShopLicenses)) exitWith {hint "Du hast nicht die erforderliche Lizenz!"};
 _color = lbValue[2303,(lbCurSel 2303)];
 _price = lbValue[2302,(lbCurSel 2302)];
 if(_price < 0) exitWith {};
 _price = _price * 1.5; //It's a permanent vehicle, add some bank to it!
-if(life_cash < _price) exitWith {hint "You do not have enough money"};
-hint "This may take a second or two.";
+if(life_cash < _price) exitWith {hint "Sorry Bro, du hast nicht genug Geld!"};
+hint "Das dauert ein paar Sekunden...";
 sleep floor(random 3);
 
-if(count(nearestObjects[_sp,["Car","Ship","Air"],4]) > 0) exitWith {hint "There is a vehicle on the spawn point."};
+if(count(nearestObjects[_sp,["Car","Ship","Air"],4]) > 0) exitWith {hint "Es steht ein Fahrzeug auf dem Spawn-Platz."};
 
 _sv = false;
 
@@ -235,7 +235,7 @@ if(_veh == "serv_truck") then
 {
 	_name = getText(configFile >> "CfgVehicles" >> _veh >> "displayName");
 };
-hint format["You bought a %1 for $%2",_name,[_price] call life_fnc_numberText];
+hint format["Du hast eine(n) %1 für €%2 gekauft",_name,[_price] call life_fnc_numberText];
 _vehicle = _veh createVehicle _sp;
 _vehicle setVectorUp (surfaceNormal _sp);
 _vehicle setPos _sp;
@@ -254,7 +254,7 @@ _vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],t
 life_vehicles set[count life_vehicles,_vehicle];
 life_cash = life_cash - _price;
 
-if(_veh in ["B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","B_MRAP_01_hmg_F"] && playerSide == west) then {
+if(_veh in ["B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","B_MRAP_01_hmg_F","I_MRAP_03_F"] && playerSide == west) then {
 	_vehicle setVariable["lights",false,true];
 };
 

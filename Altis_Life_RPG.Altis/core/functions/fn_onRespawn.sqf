@@ -35,7 +35,7 @@ switch(playerSide) do
 
 if(life_is_arrested) then
 {
-	hint "You tried to suicide from jail, you will be jailed again with a longer time.";
+	hint "Du hast im Kanst versucht dich zu töten. Du wirst nun für eine längere Zeit eingesperrt.";
 	life_is_arrested = false;
 	[_unit,true] spawn life_fnc_jail;
 }

@@ -7,7 +7,7 @@
 */
 private["_item"];
 disableSerialization;
-if((lbCurSel 2005) == -1) exitWith {hint "You need to select an item first!";};
+if((lbCurSel 2005) == -1) exitWith {hint "Du musst zuerst was auswählen!";};
 _item = lbData[2005,(lbCurSel 2005)];
 
 switch (true) do
@@ -30,7 +30,7 @@ switch (true) do
 			[] spawn
 			{
 				life_redgull_effect = time;
-				titleText["You can now run farther for 3 minutes","PLAIN"];
+				titleText["Du kannst jetzt für 3 Minuten schneller laufen!","PLAIN"];
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
@@ -40,7 +40,7 @@ switch (true) do
 	
 	case (_item == "spikeStrip"):
 	{
-		if(!isNull life_spikestrip) exitWith {hint "You already have a Spike Strip active in deployment"};
+		if(!isNull life_spikestrip) exitWith {hint "Du hast bereits Spikes gelegt."};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_spikeStrip;
@@ -57,7 +57,7 @@ switch (true) do
 	
 	case (_item == "fuelF"):
 	{
-		if(vehicle player != player) exitWith {hint "You can't refuel the vehicle while in it!"};
+		if(vehicle player != player) exitWith {hint "Du kannst das Fahrzeug nicht betanken während zu drin sitzt!"};
 		[] spawn life_fnc_jerryRefuel;
 	};
 	
@@ -91,7 +91,7 @@ switch (true) do
 	
 	default
 	{
-		hint "This item isn't usable.";
+		hint "Das ist nicht benutzbar!";
 	};
 };
 	

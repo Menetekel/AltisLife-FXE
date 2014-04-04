@@ -19,7 +19,7 @@ _control = _display displayCtrl 2601;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
-_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 hat dir ein Bußgeld in Höhe von $%2 ausgestellt!",name _cop,_val];
+_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 hat dir ein Strafzettel in HÃ¶he von â‚¬%2 gegeben.",name _cop,_val];
 
 [] spawn
 {
@@ -27,7 +27,7 @@ _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px
 	waitUntil {life_ticket_paid OR (isNull (findDisplay 2600))};
 	if(isNull (findDisplay 2600) && !life_ticket_paid) then
 	{
-		[[0,format["%1 refused to pay the ticket.",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-		[[1,format["%1 refused to pay the ticket.",name player]],"life_fnc_broadcast",life_ticket_cop,false] spawn life_fnc_MP;
+		[[0,format["%1 weigert sich den Strafzettel zu bezahlen.",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[[1,format["%1 weigert sich den Strafzettel zu bezahlen.",name player]],"life_fnc_broadcast",life_ticket_cop,false] spawn life_fnc_MP;
 	};
 };

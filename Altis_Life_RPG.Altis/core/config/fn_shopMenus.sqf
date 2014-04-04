@@ -20,7 +20,7 @@ switch (_shop) do
 {
 	case "reb":
 	{
-		ctrlSetText[2505,"Sratis Rebel Shop"];
+		ctrlSetText[2505,"Sratis Rebellen Shop"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -28,13 +28,13 @@ switch (_shop) do
 	
 	case "cop":
 	{
-		ctrlSetText[2505,"Altis Cop Shop"];
+		ctrlSetText[2505,"Altis Polizei Shop"];
 		ctrlShow[2503,false];
 	};
 	
 	case "gun":
 	{
-		ctrlSetText[2505,"Altis Gun Store"];
+		ctrlSetText[2505,"Altis Waffen Store"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -50,7 +50,7 @@ switch (_shop) do
 	
 	case "dive":
 	{
-		ctrlSetText[2505,"Altis Diving Shop"];
+		ctrlSetText[2505,"Altis Taucher Shop"];
 		ctrlShow[2503,false];
 		ctrlShow[2510,false];
 		ctrlShow[2511,false];
@@ -59,7 +59,7 @@ switch (_shop) do
 	
 	case "donator":
 	{
-		ctrlSetText[2505,"Donator Shop"];
+		ctrlSetText[2505,"Spender Shop"];
 	};
 	
 	case "sergeant":
@@ -70,13 +70,13 @@ switch (_shop) do
 	
 	case "gen":
 	{
-		ctrlSetText[2505,"Altis General Store"];
+		ctrlSetText[2505,"Altis REWE Store"];
 		ctrlShow[2503,false];
 	};
 	
 	case "officer":
 	{
-		ctrlSetText[2505,"Patrol Officer Shop"];
+		ctrlSetText[2505,"Autobahnpolizei Shop"];
 		ctrlShow[2503,false];
 	};
 	
