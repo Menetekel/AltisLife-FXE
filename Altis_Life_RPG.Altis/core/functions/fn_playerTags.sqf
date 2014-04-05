@@ -19,6 +19,7 @@ onEachFrame
                 _pos set[2,(getPosATL _x select 2) + 2.2];
 				_width = 0.7;
 				_height = 0.7;
+				if (playerSide == west) then {
 				switch (_x getVariable["coplevel", 0]) do
 				{
 					case (0) : {_name = format["Ordnungsamt %1", name _x];_icon = MISSION_ROOT + "FXE\ranks\icon_recruit.paa";};
@@ -32,11 +33,13 @@ onEachFrame
 					case (8) : {_name = format["Polizeipräsident %1", name _x];_icon = MISSION_ROOT + "FXE\ranks\icon_chief.paa";};
 					default {_name = name _x; _icon = ""; _width = 0; _height = 0;}
 				};
+
                 if ((_x getVariable["coplevel", 0] > 0) && playerSide == west) then
 				{
 					_icon = [((_x getVariable["coplevel", 0]) - 1),"texture"] call BIS_fnc_rankParams;
 				};
                 drawIcon3D [_icon,[1,1,1,1],_pos,_width,_height,0,_name,0,0.04];
+				};
             };
         };
     } foreach _near;

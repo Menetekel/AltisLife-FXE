@@ -15,8 +15,8 @@ if(life_blacklisted) exitWith
 	["Blacklisted",false,true] call BIS_fnc_endMission;
 	sleep 30;
 };
-
-if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
+//Ordnungsamt None-Whitelisted Slots
+if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_16","cop_17","cop_18","cop_13"])) then {
 	if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		sleep 35;

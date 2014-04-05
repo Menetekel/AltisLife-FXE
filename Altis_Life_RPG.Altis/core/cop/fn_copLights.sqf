@@ -8,6 +8,7 @@ private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRe
 _vehicle = _this select 0;
 
 if (isNil "_vehicle" || isNull _vehicle || !(_vehicle getVariable "lights")) exitWith {};
+//	case "I_MRAP_03_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };	
 
 switch (typeOf _vehicle) do {
 	case "C_Hatchback_01_F": { _attach = [[-0.6, 2, -0.95], [0.6, 2, -0.95]]; };
@@ -18,7 +19,7 @@ switch (typeOf _vehicle) do {
 	case "B_Heli_Transport_01_F": { _attach = [[-0.5, 0.0, 0.96], [0.5, 0.0, 0.96]]; };
 	case "I_Heli_light_03_unarmed_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };
 	case "I_MRAP_03_hmg_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };
-	case "I_MRAP_03_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };	
+	case "I_MRAP_03_F": { _attach = [[-1.05, 2.24, -0.40], [1.05, 2.24, -0.40]]; };	
 	case "B_APC_Wheeled_01_cannon_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };	
 	case "B_MRAP_01_hmg_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
@@ -52,9 +53,9 @@ _lightright setLightUseFlare true;
 _lightright setLightDayLight true;
 
 if (sunOrMoon < 1) then {
-	_brightness = 6;
+	_brightness = 6; //default 6
 } else {
-	_brightness = 50;
+	_brightness = 50; //default 50
 };
 
 _leftRed = true;  
