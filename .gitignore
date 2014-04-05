@@ -213,3 +213,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+Altis_Life_RPG.Altis/admintools/Activate.sqf
+Altis_Life_RPG.Altis/admintools/AdminToolsMain.sqf
+Altis_Life_RPG.Altis/admintools/tools/Godmode with no recoil and unlimited ammo.sqf
+Altis_Life_RPG.Altis/admintools/tools/Godmode.sqf
+Altis_Life_RPG.Altis/admintools/tools/TPtoME.sqf
+Altis_Life_RPG.Altis/admintools/tools/cargod.sqf
+Altis_Life_RPG.Altis/admintools/tools/spectate.sqf
+life_server/core/MySQL/fn_mresString.sqf
+life_server/core/MySQL/fn_update.sqf
