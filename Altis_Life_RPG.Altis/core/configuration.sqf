@@ -182,6 +182,16 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 
 
 /*
+	Service array by LR
+*/
+
+service_array =
+[
+	["repair",500]
+]
+__CONST__(service_array,service_array);
+
+/*
 	Sell / buy arrays
 */
 sell_array = 
