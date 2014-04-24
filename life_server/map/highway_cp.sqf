@@ -1,4 +1,5 @@
-if (isServer) then {
+//if (isServer) then {
+_initCodes = [];
 
 _vehicle_3 = objNull;
 if (true) then
@@ -1414,4 +1415,10 @@ if (true) then
 	_this setDir 39.074413;
 	_this setPos [22976.805, 19287.623, 0.37992764];
 };
-};
+{
+	this = _x select 0;
+	[] call compile (_x select 1);
+} foreach _initCodes;
+runInitScript;
+finishMissionInit;
+//};

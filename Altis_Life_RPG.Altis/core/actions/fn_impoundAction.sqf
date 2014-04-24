@@ -50,15 +50,15 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		_type = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 		switch (true) do
 		{
-			case (_vehicle isKindOf "Car"): {_price = life_impound_car;};
-			case (_vehicle isKindOf "Ship"): {_price = life_impound_boat;};
-			case (_vehicle isKindOf "Air"): {_price = life_impound_air;};
+			case (_vehicle isKindOf "Car"): {_price = (call life_impound_car);};
+			case (_vehicle isKindOf "Ship"): {_price = (call life_impound_boat);};
+			case (_vehicle isKindOf "Air"): {_price = (call life_impound_air);};
 		};
 		
 		life_impound_inuse = true;
 		[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
 		waitUntil {!life_impound_inuse};
-		hint format["Du hast ein %1 beschlagnahmt\n\nDu hast ‚Ç¨%2 verdient f√ºr die s√§uberung der Stra√üen!",_type,_price];
+		hint format["Du hast ein %1 beschlagnahmt\n\nDu hast Ä%2 verdient f¸r die s‰uberung der Straﬂen!",_type,_price];
 		[[0,format["%1 hat %2's %3 beschlagnahmt",name player,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		life_atmcash = life_atmcash + _price;
 	}

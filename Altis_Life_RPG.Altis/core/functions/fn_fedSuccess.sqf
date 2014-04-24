@@ -24,12 +24,12 @@ if(_funds > life_atmcash) then
 {
 	if(life_has_insurance) then
 	{
-		hint "Der JÃ¼ngste Ãœberall auf die Zentralbank hat gezeigt das es wichtig ist eine Versicherung zu haben. \n\Beim letzten Raub wurde jedoch festgestellt das deine Versicherung abgelaufen ist. Gehe zu einem Geldautomat und erneuere deine Versicherung!";
+		hint "Der Jüngste Überall auf die Zentralbank hat gezeigt das es wichtig ist eine Versicherung zu haben. \n\Beim letzten Raub wurde jedoch festgestellt das deine Versicherung abgelaufen ist. Gehe zu einem Geldautomat und erneuere deine Versicherung!";
 		life_has_insurance = false;
 	}
 		else
 	{
-		hint format["Bei einem Bankraub auf die Zentralbank wurde von deinem konto â‚¬%1 gestohlen.\n\nKaufe eine Versicherung das dies nicht mehr passiert.",[_funds] call life_fnc_numberText];
+		hint format["Bei einem Bankraub auf die Zentralbank wurde von deinem konto €%1 gestohlen.\n\nKaufe eine Versicherung das dies nicht mehr passiert.",[_funds] call life_fnc_numberText];
 		life_atmcash = life_atmcash - _funds;
 	};
 };

@@ -9,9 +9,9 @@ private["_value","_len","_group"];
 _value = ctrlText 2522;
 _len = [_value] call KRON_StrLen;
 
-if(_len > 25) exitWith {hint "Die Maximale L√§nge des Namens betr√§gt 25 Zeichen."};
-if(life_cash < 10000) exitWith {hint "Du hast keine 10,000‚Ç¨ um eine Gang zu Gr√ºnden."};
-if(isNil {life_gang_list}) exitWith {hint "Der Server erlaubt keine Ganggr√ºndungen."};
+if(_len > 25) exitWith {hint "Die Maximale L‰nge des Namens betr‰gt 25 Zeichen."};
+if(life_cash < 10000) exitWith {hint "Du hast keine 10,000Ä um eine Gang zu Gr¸nden."};
+if(isNil {life_gang_list}) exitWith {hint "Der Server erlaubt keine Ganggr¸ndungen."};
 if(([_value,life_gang_list] call fnc_index) != -1) exitWith {hint "Der Name der gang ist bereits vorhanden!"};
 
 _group = createGroup civilian;

@@ -11,12 +11,12 @@ _sum = ["apple",3,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_sum > 0) then
 {
 	life_action_inUse = true;
-	titleText["PflÃ¼ge Ã„pfel...","PLAIN"];
+	titleText["Pflücke Äpfel...","PLAIN"];
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	sleep 2;
 	if(([true,"apple",_sum] call life_fnc_handleInv)) then
 	{
-		titleText[format["Du hast %1 Apfel/Ã„pfel gesammelt.",_sum],"PLAIN"];
+		titleText[format["Du hast %1 Apfel/Äpfel gesammelt.",_sum],"PLAIN"];
 	};
 }
 	else

@@ -10,7 +10,7 @@ private["_search","_ui","_progress","_cP","_pgText"];
 if(life_action_inUse) exitWith {hint "Du bist bereist in einer Aktion. Warte bitte ab..."};
 _search = nearestObjects[getPos air_sp, ["Air"],5];
 if(count _search == 0) exitWith {hint "Es ist kein Helikopter auf dem Helipad."};
-if(life_cash < 1000) exitWith {hint "Du brauchst 1,000â‚¬ fÃ¼r den Helikopter-Wartung."};
+if(life_cash < 1000) exitWith {hint "Du brauchst 1,000€ für den Helikopter-Wartung."};
 life_cash = life_cash - 1000;
 life_action_inUse = true;
 5 cutRsc ["life_progress","PLAIN"];

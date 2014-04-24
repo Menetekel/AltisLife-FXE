@@ -30,7 +30,7 @@ if(vehicle player != player) then
 	};
 };
 
-if(isNil "_vehicle") exitWith {hint "Es ist kein Fahrzeug in der NÃ¤he."};
+if(isNil "_vehicle") exitWith {hint "Es ist kein Fahrzeug in der Nähe."};
 if(isNull _vehicle) exitWith {};
 [[_vehicle,false,(_this select 1)],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
 hint "Der Server versucht das Fahrzeug einzulagern..";

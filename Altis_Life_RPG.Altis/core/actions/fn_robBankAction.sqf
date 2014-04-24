@@ -12,9 +12,9 @@ waitUntil {!isNil {bank_query_funds}};
 _funds = bank_query_funds;
 if(_funds < 0) exitWith
 {
-	hint "Weil die Bank kÃ¼rzlich ausgeraubt wurde kann sie ihren Kunden ihr Geld nicht zurÃ¼ck zahlen und ist jetzt pleite.";
+	hint "Weil die Bank kürzlich ausgeraubt wurde kann sie ihren Kunden ihr Geld nicht zurück zahlen und ist jetzt pleite.";
 };
-hint "Versuche den Tresor zu Ã¶ffnen...";
+hint "Versuche den Tresor zu öffnen...";
 sleep 1;
 bank_query_funds = nil;
 

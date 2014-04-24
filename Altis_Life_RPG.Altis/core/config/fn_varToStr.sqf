@@ -13,8 +13,8 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 	//Virtual Inventory Items
-	case "life_inv_oilu": {"Unprozessiertes Ã–l"};
-	case "life_inv_oilp": {"Prozessiertes Ã–l"};
+	case "life_inv_oilu": {"Unprozessiertes Öl"};
+	case "life_inv_oilp": {"Prozessiertes Öl"};
 	case "life_inv_heroinu": {"Unprozessiertes Heroin"};
 	case "life_inv_heroinp": {"Prozessiertes Heroin"};
 	case "life_inv_cannabis": {"Cannabis"};
@@ -27,11 +27,11 @@ switch (_var) do
 	case "life_inv_tuna": {"Thunfisch"};
 	case "life_inv_mullet": {"Mullet Fleisch"};
 	case "life_inv_catshark": {"Katzenhaifleisch"};
-	case "life_inv_turtle": {"SchildkrÃ¶tenfleisch"};
+	case "life_inv_turtle": {"Schildkrötenfleisch"};
 	case "life_inv_fishingpoles": {"Angel"};
 	case "life_inv_water": {"Wasserflasche"};
 	case "life_inv_coffee": {"Kaffee"};
-	case "life_inv_turtlesoup": {"SchildkrÃ¶tensuppe"};
+	case "life_inv_turtlesoup": {"Schildkrötensuppe"};
 	case "life_inv_donuts": {"Donuts"};
 	case "life_inv_fuelE": {"Benzinkanister - leer"};
 	case "life_inv_fuelF": {"Benzinkanister - voll"};
@@ -62,13 +62,13 @@ switch (_var) do
 	case "license_civ_air": {"Piloten-Lizenz"};
 	case "license_civ_heroin": {"Heroin-Lizenz"};
 	case "license_civ_gang": {"Gang-Lizenz"};
-	case "license_civ_oil": {"Ã–l-Lizenz"};
+	case "license_civ_oil": {"Öl-Lizenz"};
 	case "license_civ_dive": {"Tauch-Lizenz"};
 	case "license_civ_boat": {"Boots-Lizenz"};
 	case "license_civ_gun": {"Schusswaffen-Lizenz"};
 	case "license_cop_air": {"Piloten-Lizenz"};
 	case "license_cop_swat": {"SEK-Lizenz"};
-	case "license_cop_cg": {"KÃ¼chstenwache-Lizenz"};
+	case "license_cop_cg": {"Küchstenwache-Lizenz"};
 	case "license_civ_rebel": {"Rebelen-Lizenz"};
 	case "license_civ_truck": {"LKW-Lizenz"};
 	case "license_civ_diamond": {"Diamanten-Lizenz"};

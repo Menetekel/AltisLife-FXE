@@ -5,7 +5,7 @@
 	Description:
 	Doesn't matter, will be revised later.
 */
-if(life_cash < 50) exitWith {hint "Du hast keine â‚¬50 um die Rechnung zu bezahlen."};
+if(life_cash < 50) exitWith {hint "Du hast keine €50 um die Rechnung zu bezahlen."};
 titleText["Dr. Bob heilt dich jetzt. Keine Angst!","PLAIN"];
 sleep 2;
 titleText["Ups. Ich glaube die Nadel sollte da nicht rein.","PLAIN"];

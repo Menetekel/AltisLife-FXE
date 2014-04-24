@@ -16,7 +16,7 @@ player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
-titleText["Du bist im GefÃ¤ngis. Sitze deine Zeit ab. Respawn oder Selbstmord erhÃ¶ht die Inhaftierung.","PLAIN"];
+titleText["Du bist im Gefängis. Sitze deine Zeit ab. Respawn oder Selbstmord erhöht die Inhaftierung.","PLAIN"];
 hint "Bei der Verhaftung verlierst du folgende Lizenzen\n\nSchusswaffen-Lizenz\nRebelen-Lizenz";
 player setPos (getMarkerPos "jail_marker");
 

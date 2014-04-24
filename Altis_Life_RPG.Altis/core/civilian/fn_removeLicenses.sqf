@@ -36,7 +36,7 @@ switch (_state) do
 			license_civ_air = false;
 			license_civ_truck = false;
 			license_civ_boat = false;
-			hint "Du hast alle deine Lizenze verloren wegen Totschlag im Stra√üenverkehr.";
+			hint "Du hast alle deine Lizenzen durch Totschlag im Straﬂenverkehr verloren.";
 		};
 	};
 	

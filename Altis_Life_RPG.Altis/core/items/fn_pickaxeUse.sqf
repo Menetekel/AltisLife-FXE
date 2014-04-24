@@ -20,7 +20,7 @@ switch (true) do
 	default {_mine = "";};
 };
 //Mine check
-if(_mine == "") exitWith {hint "Du bist nicht in der NÃ¤he einer Mine!"};
+if(_mine == "") exitWith {hint "Du bist nicht in der Nähe einer Mine!"};
 if(vehicle player != player) exitWith {hint "Du kannst nicht in einem Auto Minen.";};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;

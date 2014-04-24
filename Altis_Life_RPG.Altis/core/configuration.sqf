@@ -24,10 +24,17 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 35;
+life_respawn_timer = 1; //Scaled in minutes
 life_has_insurance = false;
 life_knockout = false;
 life_interrupted = false;
+life_respawned = false;
+life_removeWanted = false;
+
+//Revive constant variables.
+__CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
+__CONST__(life_revive_fee,50);
+
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
 /*
@@ -63,7 +70,6 @@ life_eat_donuts = 30;
 life_net_dropped = false;
 life_hit_explosive = false;
 life_siren_active = false;
-life_siren2_active = false; //SIREN2 YELP
 life_bank_fail = false;
 life_use_atm = true;
 life_is_arrested = false;
@@ -71,11 +77,11 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-life_paycheck_period = 5; //Five minutes
+__CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
-life_impound_car = 350;
-life_impound_boat = 250;
-life_impound_air = 850;
+__CONST__(life_impound_car,350);
+__CONST__(life_impound_boat,250);
+__CONST__(life_impound_air,850);
 life_istazed = false;
 life_my_gang = ObjNull;
 
@@ -85,13 +91,18 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 5000; //Starting Bank Money
-		life_paycheck = 750; //Paycheck Amount
+		life_atmcash = 7000; //Starting Bank Money
+		life_paycheck = 500; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 5000; //Starting Bank Money
-		life_paycheck = 750; //Paycheck Amount
+		life_atmcash = 3000; //Starting Bank Money
+		life_paycheck = 350; //Paycheck Amount
+	};
+	
+	case independent: {
+		life_atmcash = 6500;
+		life_paycheck = 450;
 	};
 };
 
@@ -170,7 +181,8 @@ life_licenses =
 	["license_civ_iron","civ"],
 	["license_civ_sand","civ"],
 	["license_civ_salt","civ"],
-	["license_civ_cement","civ"]
+	["license_civ_cement","civ"],
+	["license_med_air","med"]
 ];
 
 //Setup License Variables
@@ -252,7 +264,6 @@ life_weapon_shop_array =
 	["arifle_sdar_F",7500],
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",1500],
-	["Binocular",50],
 	["ItemGPS",45],
 	["ToolKit",75],
 	["FirstAidKit",65],

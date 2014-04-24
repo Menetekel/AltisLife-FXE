@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_copInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -12,9 +13,10 @@
 #define Btn5 37454
 #define Btn6 37455
 #define Btn7 37456
+#define Btn8 37457
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
@@ -41,8 +43,13 @@ _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
 _Btn2 buttonSetAction "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn life_fnc_MP";
 
 //Set Search Button
-_Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
-_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
+ if(__GETC__(life_coplevel) > 1) then
+        {
+        _Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
+	_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";    
+        };
+//_Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
+//_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
 //Set Escort Button
 if((_curTarget getVariable["Escorting",false])) then {

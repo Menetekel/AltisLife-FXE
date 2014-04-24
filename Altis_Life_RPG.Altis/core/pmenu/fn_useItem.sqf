@@ -7,7 +7,7 @@
 */
 private["_item"];
 disableSerialization;
-if((lbCurSel 2005) == -1) exitWith {hint "Du musst zuerst was ausw√§hlen!";};
+if((lbCurSel 2005) == -1) exitWith {hint "Du musst zuerst was ausw‰hlen!";};
 _item = lbData[2005,(lbCurSel 2005)];
 
 switch (true) do
@@ -30,7 +30,7 @@ switch (true) do
 			[] spawn
 			{
 				life_redgull_effect = time;
-				titleText["Du kannst jetzt f√ºr 3 Minuten schneller laufen!","PLAIN"];
+				titleText["Du kannst jetzt f¸r 3 Minuten schneller laufen!","PLAIN"];
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
@@ -57,7 +57,7 @@ switch (true) do
 	
 	case (_item == "fuelF"):
 	{
-		if(vehicle player != player) exitWith {hint "Du kannst das Fahrzeug nicht betanken w√§hrend zu drin sitzt!"};
+		if(vehicle player != player) exitWith {hint "Du kannst das Fahrzeug nicht betanken w‰hrend zu drin sitzt!"};
 		[] spawn life_fnc_jerryRefuel;
 	};
 	

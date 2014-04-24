@@ -64,7 +64,7 @@ if(_veh distance impound_obj < 50) then
 		_v removeallEventHandlers "handleDamage";
 	};
 
-	hint format["Du hast dein Auto beschlagnahmt %1 fÃ¼r $%3",_name,[_price] call life_fnc_numberText];
+	hint format["Du hast dein Auto beschlagnahmt %1 für $%3",_name,[_price] call life_fnc_numberText];
 	detach _veh;
 	if(_veh isKindOf "Air") then 
 	{

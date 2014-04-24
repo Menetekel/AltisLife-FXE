@@ -44,5 +44,5 @@ hint parseText format["<t color='#FF0000'><t size='2'>%1</t></t><br/><t color='#
 
 if(_robber) then
 {
-	[[0,format["%1 wurde als BankrÃ¤uber identifiziert",name _civ]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,format["%1 wurde als Bankräuber identifiziert",name _civ]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 };

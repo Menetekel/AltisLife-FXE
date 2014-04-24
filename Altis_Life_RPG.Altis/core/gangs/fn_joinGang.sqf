@@ -36,5 +36,5 @@ if(!isNull _group) then
 }
 	else
 {
-	hint "Die Gang ist nicht gÃ¼ltig!";
+	hint "Die Gang ist nicht gültig!";
 };

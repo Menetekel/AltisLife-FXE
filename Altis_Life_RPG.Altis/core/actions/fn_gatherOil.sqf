@@ -11,11 +11,11 @@ _sum = ["oilu",1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_sum > 0) then
 {
 	life_action_in_use = true;
-	titleText["Ernte Ã–l...","PLAIN"];
+	titleText["Sammle Öl...","PLAIN"];
 	sleep 4;
 	if(([true,"oilu",_sum] call life_fnc_handleInv)) then
 	{
-		titleText["du hast Ã–l gesammelt.","PLAIN"];
+		titleText["Du hast Öl gesammelt.","PLAIN"];
 	};
 }
 	else

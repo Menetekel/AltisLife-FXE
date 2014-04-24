@@ -244,7 +244,7 @@ if(_veh == "B_MRAP_01_hmg_F") then
 };
 _vehicle setPos _sp;
 _vehicle setDir _dir;
-//_vehicle setVariable["trunk_in_use",false,true];
+_vehicle setVariable["trunk_in_use",false,true];
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
 if(_sv) then

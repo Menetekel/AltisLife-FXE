@@ -77,7 +77,7 @@ if(_hasLicense) then
 }
 	else
 {
-	if(life_cash < _cost) exitWith {hint format["Um ohne Lizenz zu verarbeiten benÃ¶tigst du â‚¬%1",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(life_cash < _cost) exitWith {hint format["Um ohne Lizenz zu verarbeiten benötigst du €%1",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	
 	while{true} do
 	{
@@ -90,11 +90,11 @@ if(_hasLicense) then
 	};
 	
 	if(player distance _vendor > 10) exitWith {hint "Du musst im Umkreis von 10m sein."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(life_cash < _cost) exitWith {hint format["Um ohne Lizenz zu verarbeiten benÃ¶tigst du â‚¬%1!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(life_cash < _cost) exitWith {hint format["Um ohne Lizenz zu verarbeiten benötigst du €%1!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 	5 cutText ["","PLAIN"];
-	titleText[format["Du hast %1 verarbeitet zu %2 fÃ¼r â‚¬%3",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast %1 verarbeitet zu %2 für €%3",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash - _cost;
 	life_is_processing = false;
 };	

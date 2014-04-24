@@ -7,7 +7,7 @@
 */
 if(isNull (findDisplay 2900)) then
 {
-	if(!createDialog "TAW_VD") exitWith {hint "Etwas ist schiefgelaufen, das MenÃ¼ lÃ¤ÃŸt sich nicht Ã¶ffnen."};
+	if(!createDialog "TAW_VD") exitWith {hint "Etwas ist schiefgelaufen, das Menü läßt sich nicht öffnen."};
 };
 
 disableSerialization;

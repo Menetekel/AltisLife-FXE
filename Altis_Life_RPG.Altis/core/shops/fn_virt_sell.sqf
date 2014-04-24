@@ -17,13 +17,13 @@ _var = [_type,0] call life_fnc_varHandle;
 _amount = ctrlText 2405;
 if(!([_amount] call fnc_isnumber)) exitWith {hint "Du hast keine Menge angegeben";};
 _amount = parseNumber (_amount);
-if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "Du hast nicht die gewÃ¤hlte Anzahl an Items die du verkaufen willst."};
+if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "Du hast nicht die gewählte Anzahl an Items die du verkaufen willst."};
 
 _price = (_price * _amount);
 _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
-	hint format["Du hast %1 %2 fÃ¼r â‚¬%3 verkauft",_amount,_name,[_price] call life_fnc_numberText];
+	hint format["Du hast %1 %2 für €%3 verkauft",_amount,_name,[_price] call life_fnc_numberText];
 	life_cash = life_cash + _price;
 	[] call life_fnc_virt_update;
 	

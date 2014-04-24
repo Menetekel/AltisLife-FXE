@@ -9,7 +9,7 @@
 		[] call life_fnc_hudUpdate;
 		if(life_hunger < 2) then {player setDamage 1; hint "Du hast dich zu Tode gehungert.";};
 		switch(life_hunger) do {
-			case 30: {hint "Du f√ºhlst dich hungrig! Finde langsam was zu essen! ";};
+			case 30: {hint "Du f¸hlst dich hungrig! Finde langsam was zu essen! ";};
 			case 20: {hint "Du bist am verhungern! Finde was zu essen oder du stirbst!";};
 			case 10: {hint "Es wird jetzt wirklich an der zeit was zu essen! Hallo? Du stirbst!!";player setFatigue 1;};
 			};
@@ -68,7 +68,7 @@
 		if(life_carryWeight > life_maxWeight && !isForcedWalk player) then {
 			player forceWalk true;
 			player setFatigue 1;
-			hint "Du tr√§gst zuviel mit dir rum. Lege ein paar Dinge ab um schneller zu laufen.";
+			hint "Du tr‰gst zuviel mit dir rum. Lege ein paar Dinge ab um schneller zu laufen.";
 		} else {
 			if(isForcedWalk player) then {
 				player forceWalk false;

@@ -6,8 +6,38 @@
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
-private["_shop","_return"];
+private["_shop","_return","_copcars"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
+
+_copCars = 
+			_return set[count _return,	["C_Hatchback_01_F",1000]];
+					
+			if(__GETC__(life_coplevel) > 0) then
+			{
+				_return set[count _return,	["C_Offroad_01_F",1000]];
+			};
+				if(__GETC__(life_coplevel) > 2) then
+			{
+				_return set[count _return,	["C_SUV_01_F",20000]];
+			};
+			if(__GETC__(life_coplevel) > 3) then
+			{
+				_return set[count _return,	["B_MRAP_01_F",30000]];
+			};
+			if(__GETC__(life_coplevel) > 4) then
+			{
+				_return set[count _return,	["C_Hatchback_01_sport_F",7500]];
+			};
+			if(__GETC__(life_coplevel) > 6) then
+			{
+			_return set[count _return,	["B_MRAP_01_hmg_F",30000]];
+			_return set[count _return,	["I_MRAP_03_F",1337]];
+			};
+			
+		;
+
+		
+		
 if(_shop == "") exitWith {[]};
 _return = [];
 switch (_shop) do
@@ -199,90 +229,34 @@ switch (_shop) do
 	
 	case "cop_car_1":
 	{
-		_return set[count _return,
-		["C_Hatchback_01_F",1]];
-		_return set[count _return,
-		["C_Offroad_01_F",5000]];
-		_return set[count _return,
-		["C_Hatchback_01_sport_F",7500]];
-		_return set[count _return,
-		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_MRAP_01_F",30000]];
-		};
-		if(__GETC__(life_coplevel) > 6) then
-		{
-			_return set[count _return,
-			["I_MRAP_03_F",1337]];
-		};
+	_return = 
+		[
+			_return = _copCars;
+		];
+		
 	};
 	
 	case "cop_car_2":
 	{
-		_return set[count _return,
-		["C_Hatchback_01_F",1]];
-		_return set[count _return,
-		["C_Offroad_01_F",5000]];
-		_return set[count _return,
-		["C_Hatchback_01_sport_F",7500]];
-		_return set[count _return,
-		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_MRAP_01_F",30000]];
-		};
-		if(__GETC__(life_coplevel) > 6) then
-		{
-			_return set[count _return,
-			["I_MRAP_03_F",1337]];
-		};
+	_return = 
+		[
+			_return = _copCars;
+		];
+		
 	};
 	
 	case "cop_car_3":
 	{
-		_return set[count _return,
-		["C_Hatchback_01_F",1]];
-		_return set[count _return,
-		["C_Offroad_01_F",5000]];
-		_return set[count _return,
-		["C_Hatchback_01_sport_F",7500]];
-		_return set[count _return,
-		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_MRAP_01_F",30000]];
-		};
-		if(__GETC__(life_coplevel) > 6) then
-		{
-			_return set[count _return,
-			["I_MRAP_03_F",1337]];
-		};
+	_return = 
+		[
+			_return = _copCars;
+		];
+		
 	};
 	
 	case "cop_car_5":
 	{
-		_return set[count _return,
-		["C_Hatchback_01_F",1]];
-		_return set[count _return,
-		["C_Offroad_01_F",5000]];
-		_return set[count _return,
-		["C_Hatchback_01_sport_F",7500]];
-		_return set[count _return,
-		["C_SUV_01_F",20000]];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_MRAP_01_F",30000]];
-		};
-		if(__GETC__(life_coplevel) > 6) then
-		{
-			_return set[count _return,
-			["I_MRAP_03_F",1337]];
-		};
+		_copCars;
 	};
 	
 	case "fed_car":
@@ -337,27 +311,13 @@ switch (_shop) do
 	
 	case "cop_air_1":
 	{
-		_return set[count _return,
-		["B_Heli_Light_01_F",75000]];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_Heli_Transport_01_F",200000]];
-		};
+		
 	};
 	
 	case "cop_air_2":
 	{
-		_return set[count _return,
-		["B_Heli_Light_01_F",75000]];
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_Heli_Transport_01_F",200000]];
-			_return set[count _return,
-			["B_MRAP_01_hmg_F",750000]];
-		};
-	}; 
+		
+	};
 	
 	case "civ_ship_1":
 	{
@@ -388,13 +348,7 @@ switch (_shop) do
 	
 	case "cop_ship_1":
 	{
-		_return =
-		[
-			["B_Boat_Transport_01_F",3000],
-			["C_Boat_Civil_01_police_F",20000],
-			["B_Boat_Armed_01_minigun_F",75000],
-			["B_SDV_01_F",100000]
-		];
+	
 	};
 	
 	case "donator_heli":

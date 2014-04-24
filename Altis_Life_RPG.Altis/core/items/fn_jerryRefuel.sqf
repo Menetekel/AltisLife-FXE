@@ -8,9 +8,9 @@
 private["_vehicle","_displayName","_upp","_ui","_progress","_pgText","_cP","_previousState"];
 _vehicle = cursorTarget;
 life_interrupted = false;
-if(isNull _vehicle) exitWith {hint "Du musst in richtung des Fahrzeuges schauen um es auszufÃ¼llen."};
+if(isNull _vehicle) exitWith {hint "Du musst in richtung des Fahrzeuges schauen um es auszufüllen."};
 if(!(_vehicle isKindOF "LandVehicle") && !(_vehicle isKindOf "Air") && !(_vehicle isKindOf "Ship")) exitWith {};
-if(player distance _vehicle > 7.5) exitWith {hint "Du musst nÃ¤her ans Fahrzeug ran."};
+if(player distance _vehicle > 7.5) exitWith {hint "Du musst näher ans Fahrzeug ran."};
 
 if(!([false,"fuelF",1] call life_fnc_handleInv)) exitWith {};
 life_action_inUse = true;

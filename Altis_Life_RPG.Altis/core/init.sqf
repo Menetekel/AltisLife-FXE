@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	Master client initialization file
 */
@@ -33,6 +34,7 @@ cutText["Finishing client setup procedure","BLACK FADED"];
 0 cutFadeOut 9999999;
 //[] execVM "core\client\group_base_respawn.sqf";
 //diag_log "::Life Client:: Group Base Execution";
+[] spawn life_fnc_escInterupt;
 
 switch (playerSide) do
 {
@@ -46,6 +48,13 @@ switch (playerSide) do
 	{
 		//Initialize Civilian Settings
 		_handle = [] spawn life_fnc_initCiv;
+		waitUntil {scriptDone _handle};
+	};
+	
+	case independent:
+	{
+		//Initialize Medics and blah
+		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
 	};
 };
@@ -77,7 +86,12 @@ life_fnc_moveIn = compileFinal
 ";
 
 [] execVM "core\init_survival.sqf";
-
-setPlayerRespawnTime life_respawn_timer; //Set our default respawn time.
-[] execVM "core\monitor_esc.sqf";
+uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
 [] call life_fnc_setupActions;
+
+__CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
+
+/*
+	Initialize SpyGlass
+*/
+[] call SPY_fnc_payLoad;

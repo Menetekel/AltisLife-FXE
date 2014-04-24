@@ -13,12 +13,49 @@ class CfgPatches
 
 class CfgFunctions
 {
+	class BIS_Overwrite
+	{
+		tag = "BIS";
+		class MP
+		{
+			file = "\life_server\Functions\MP";
+			class initMultiplayer{};
+			class call{};
+			class spawn{};
+			class execFSM{};
+			class execVM{};
+			class execRemote{};
+			class addScore{};
+			class setRespawnDelay{};
+			class onPlayerConnected{};
+			class initPlayable{};
+			class missionTimeLeft{};
+		};
+	};
+	
+	class SpyGlass
+	{
+		tag = "SPY";
+		class Functions
+		{
+			file = "\life_server\Functions\SPYGLASS";
+			class cmdMenuCheck{};
+			class cookieJar{};
+			class menuCheck{};
+			class notifyAdmins{};
+			class observe{};
+			class payLoad{};
+			class variableCheck{};
+			class initSpy {postInit=1;};
+		};
+	};
+	
 	class MySQL_Database
 	{
 		tag = "DB";
 		class MySQL
 		{
-			file = "\life_server\core\MySQL";
+			file = "\life_server\Functions\MySQL";
 			class insert{};
 			class query{};
 			class update{};
@@ -42,7 +79,7 @@ class CfgFunctions
 		tag = "life";
 		class Wanted_Sys
 		{
-			file = "\life_server\core\wantedsys";
+			file = "\life_server\Functions\WantedSystem";
 			class wantedFetch {};
 			class wantedPerson {};
 			class wantedBounty {};
@@ -55,13 +92,13 @@ class CfgFunctions
 		
 		class Jail_Sys
 		{
-			file = "\life_server\core\jail";
+			file = "\life_server\Functions\Jail";
 			class jailSys {};
 		};
 		
 		class Client_Code
 		{
-			file = "\life_server\core\clientside";
+			file = "\life_server\Functions\Client";
 			class safeOpen {};
 			class safeInventory {};
 			class safeTake {};
@@ -72,9 +109,9 @@ class CfgFunctions
 	class TON_System
 	{
 		tag = "TON";
-		class System
+		class Systems
 		{
-			file = "\life_server\core\system";
+			file = "\life_server\Functions\Systems";
 			class query {};
 			class add {};
 			class update {};
@@ -97,24 +134,10 @@ class CfgFunctions
 			class federalUpdate {};
 			class isUIDActive {};
 			class chopShopSell {};
+			class silentSync {};
+			class clientDisconnect {};
 		};
 	};
-    class BRUUUDIS_System {
-
-        tag = "BRUUUDIS";       
-        class Bruuudis
-        {
-            file = "\life_server\core\bruuudis";
-            class add {};
-            class query {};
-            class deleteHouse {};
-            class insertHouse {};
-            class queryHouses {};
-            class queryPlayerHouses {};
-            class updateHouseStorage {};
-            class updateHouseWeaponStorage {};
-        };
-    };
 };
 
 class CfgVehicles

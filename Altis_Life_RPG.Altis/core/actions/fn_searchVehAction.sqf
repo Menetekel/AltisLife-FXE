@@ -6,9 +6,9 @@ _vehicle = cursorTarget;
 if((_vehicle isKindOf "Car") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship")) then
 {
 	_owners = _vehicle getVariable "vehicle_info_owners";
-	if(isNil {_owners}) exitWith {hint "Dieses Fahrzeug hat keine Informationen. Es wurde eventuell ercheatet. \n\nFahrzeug wird gelÃ¶scht.."; deleteVehicle _vehicle;};
+	if(isNil {_owners}) exitWith {hint "Dieses Fahrzeug hat keine Informationen. Es wurde eventuell ercheatet. \n\nFahrzeug wird gelöscht.."; deleteVehicle _vehicle;};
 	life_action_inUse = true;
-	hint "Suche Fahrzeug....";
+	hint "Durchsuche Fahrzeug....";
 	sleep 3;
 	life_action_inUse = false;
 	if(player distance _vehicle > 10 || !alive player || !alive _vehicle) exitWith {hint "Konnte das Fahrzeug nicht suchen..";};

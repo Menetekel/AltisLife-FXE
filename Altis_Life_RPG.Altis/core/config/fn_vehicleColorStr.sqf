@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_vehicleColorStr.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -67,6 +67,7 @@ switch (_vehicle) do
 			case 2: {_color = "Silber";};
 			case 3: {_color = "Orange";};
 			case 4: {_color = "Polizei";};
+			case 5: {_color = "Sanitäter";};
 		};
 	};
 	

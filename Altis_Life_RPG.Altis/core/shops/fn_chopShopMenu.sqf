@@ -12,8 +12,8 @@ _nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck"],25
 
 life_chopShop = (_this select 3);
 //Error check
-if(count _nearVehicles == 0) exitWith {titleText["In der NÃ¤he ist kein Fahrzeug zum verkaufen...","PLAIN"];};
-if(!(createDialog "Chop_Shop")) exitWith {hint "Es ist etwas schiefgelaufen beim Ã¶ffnen des MenÃ¼s"};
+if(count _nearVehicles == 0) exitWith {titleText["In der Nähe ist kein Fahrzeug zum verkaufen...","PLAIN"];};
+if(!(createDialog "Chop_Shop")) exitWith {hint "Es ist etwas schiefgelaufen beim öffnen des Menüs"};
 
 _control = ((findDisplay 39400) displayCtrl 39402);
 {

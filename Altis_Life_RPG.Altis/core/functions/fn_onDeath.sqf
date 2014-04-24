@@ -39,7 +39,7 @@ if(side _source == west && !life_use_atm) then
 {
 	if(life_cash != 0) then
 	{
-		[format["$%1 wurden an die Zentralbank zurÃ¼ckgegeben da der RÃ¤uber getÃ¶tet wurde.",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[format["$%1 wurden an die Zentralbank zurückgegeben da der Räuber getötet wurde.",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		life_cash = 0;
 	};
 };

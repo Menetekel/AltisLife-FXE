@@ -30,5 +30,5 @@ if(primaryWeapon _unit != "") then
 };
 
 if(count _attach == 0) then {_attach = "None"};
-_text ctrlSetStructuredText parseText format["Name: %1<br/>Bank: %2<br/>Geld: %3<br/>Uniform: %4<br/>Weste: %5<br/>Rucksack: %6<br/>Prim√§r: %7<br/>Handwaffe: %8<br/><t align='center'>Prim√§res Zubeh√∂r</t><br/>%9",
+_text ctrlSetStructuredText parseText format["Name: %1<br/>Bank: %2<br/>Geld: %3<br/>Uniform: %4<br/>Weste: %5<br/>Rucksack: %6<br/>Prim‰r: %7<br/>Handwaffe: %8<br/><t align='center'>Prim‰res Zubehˆr</t><br/>%9",
 name _unit,[_ret select 0] call life_fnc_numberText,[_ret select 1] call life_fnc_numberText, _uni,_vest,_bp,_prim,_sec,_attach];

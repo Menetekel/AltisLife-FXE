@@ -11,7 +11,7 @@ _unit = _this select 1;
 if(life_bail_paid) exitWith {};
 if(isNil {life_bail_amount}) then {life_bail_amount = 3500;};
 if(!isNil "life_canpay_bail") exitWith {hint "Du musst 3 minuten warten um die Kaution zu zahlen."};
-if(life_atmcash < life_bail_amount) exitWith {hint format["Du hast keine â‚¬%1 auf deinem Konto um die Kaution zu zahlen..",life_bail_amount];};
+if(life_atmcash < life_bail_amount) exitWith {hint format["Du hast keine €%1 auf deinem Konto um die Kaution zu zahlen..",life_bail_amount];};
 
 life_atmcash = life_atmcash - life_bail_amount;
 life_bail_paid = true;

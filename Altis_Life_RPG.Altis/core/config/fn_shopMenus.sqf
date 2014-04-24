@@ -84,6 +84,11 @@ switch (_shop) do
 	{
 		ctrlSetText[2505,"Admin Shop"];
 	};
+	case "EMT":
+	{
+		ctrlSetText[2505,"Rettungsdienst Shop"];
+		ctrlShow[2503,false];
+	};
 };
 
 ["guns"] call life_fnc_shops_changeMenu;

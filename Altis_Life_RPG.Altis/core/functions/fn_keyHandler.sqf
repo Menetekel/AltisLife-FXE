@@ -25,12 +25,23 @@ if(life_action_inUse) exitWith {
 };
 
 switch (_code) do
-{	
+{
+	//Space key for Jumping
+	case 57:
+	{
+		if(animationState player != "AovrPercMrunSrasWrflDf" && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2}) then {
+			[[player],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP;
+			_handled = true;
+		};
+	};
+	
 	//Map Key
 	case _mapKey:
 	{
-		if(playerSide == west && !visibleMap) then {
-			[] spawn life_fnc_copMarkers;
+		switch (playerSide) do 
+		{
+			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
+			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 		};
 	};
 	
@@ -70,7 +81,7 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && !(player getVariable["surrender",false]) && (isPlayer cursorTarget) && (side cursorTarget == civilian) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && !(player getVariable["surrender",false]) && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -131,7 +142,7 @@ switch (_code) do
 			"I_MRAP_03_F",
 			"B_APC_Wheeled_01_cannon_F",
 			"B_MRAP_01_hmg_F"
-			]) then {
+]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					[vehicle player] call life_fnc_sirenLights;
 					_handled = true;
@@ -152,7 +163,6 @@ switch (_code) do
 	//V Key
 	case 47:
 	{
-			//surrender with shift + v
 		if(_shift) then {_handled = true;};
 		if (_shift) then
 		{
@@ -169,8 +179,8 @@ switch (_code) do
 		};				
 		if(playerSide != west && (player getVariable "restrained") OR (player getVariable "transporting")) then {_handled = true;};
 	};
-    //F Key
-case 33:
+	//F Key
+	case 33:
     {    if(_shift) then
             {
                 if(playerSide == west && vehicle player != player && !life_siren2_active && ((driver vehicle player) == player)) then
@@ -199,30 +209,30 @@ case 33:
 
         if (!_shift) then
         {
-            if(playerSide == west && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
-            {
-                [] spawn
-                {
-                    life_siren_active = true;
-                    sleep 2.0;
-                    life_siren_active = false;
-                };
-                _veh = vehicle player;
-                if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
-                if((_veh getVariable "siren")) then
-                {
-                    titleText ["Sirens Off","PLAIN"];
-                    _veh setVariable["siren",false,true];
-                }
-                    else
-                {
-                    titleText ["Sirens On","PLAIN"];
-                    _veh setVariable["siren",true,true];
-                    [[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
-                };
-            };                                            
-        };
-    };
+		if(playerSide == west && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		{
+			[] spawn
+			{
+				life_siren_active = true;
+				sleep 4.7;
+				life_siren_active = false;
+			};
+			_veh = vehicle player;
+			if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
+			if((_veh getVariable "siren")) then
+			{
+				titleText ["Sirens Off","PLAIN"];
+				_veh setVariable["siren",false,true];
+			}
+				else
+			{
+				titleText ["Sirens On","PLAIN"];
+				_veh setVariable["siren",true,true];
+				[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
+			};
+		};
+		};
+  };
 	//U Key
 	case 22:
 	{
@@ -251,7 +261,7 @@ case 33:
 					{
 						[[_veh,0], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
-					systemChat "You have unlocked your vehicle.";
+					systemChat "Fahrzeug aufgeschlossen.";
 					player say3D "car_lock";
 				}
 					else
@@ -264,7 +274,7 @@ case 33:
 					{
 						[[_veh,2], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
-					systemChat "You have locked your vehicle.";
+					systemChat "Fahrzeug abgeschlossen.";
 					player say3D "unlock";
 				};
 			};

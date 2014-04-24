@@ -27,7 +27,7 @@ if(!isNil {_val}) then
 	};
 	
 	player playmove "AinvPknlMstpSlayWrflDnon";
-	titleText[format["Du hast â‚¬%1 aufgehoben! Du GlÃ¼ckspilz!",[_val] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast €%1 aufgehoben! Du Glückspilz!",[_val] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _val;
 	life_action_delay = time;
 };

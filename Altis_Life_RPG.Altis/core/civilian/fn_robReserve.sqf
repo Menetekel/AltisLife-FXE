@@ -54,7 +54,7 @@ switch(true) do
 	
 	case ((round(_timer - time)) < 1):
 	{
-		hint format["Du hast der Zantralbank â‚¬%1 gestohlen. \n\nTo Vermeide eine Verfolgung. Deine Bankkarte funktioniert fÃ¼r 8minuten nicht.",[_funds] call life_fnc_numberText];
+		hint format["Du hast der Zantralbank €%1 gestohlen. \n\nTo Vermeide eine Verfolgung. Deine Bankkarte funktioniert für 8minuten nicht.",[_funds] call life_fnc_numberText];
 		[] spawn
 		{
 			life_use_atm = false;

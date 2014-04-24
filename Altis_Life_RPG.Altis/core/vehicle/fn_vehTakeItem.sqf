@@ -9,10 +9,10 @@
 */
 private["_ctrl","_num","_index","_data","_old","_value","_weight","_diff"];
 disableSerialization;
-if(isNull life_trunk_vehicle OR !alive life_trunk_vehicle) exitWith {hint "Das Fahrzeug ist entweder nicht vorhanden oder zerstÃ¶rt!"};
+if(isNull life_trunk_vehicle OR !alive life_trunk_vehicle) exitWith {hint "Das Fahrzeug ist entweder nicht vorhanden oder zerstört!"};
 if(!alive player) exitwith {closeDialog 0;};
 
-if((lbCurSel 3502) == -1) exitWith {hint "Du musst was auswÃ¤hlen!";};
+if((lbCurSel 3502) == -1) exitWith {hint "Du musst was auswählen!";};
 _ctrl = ctrlSelData(3502);
 _num = ctrlText 3505;
 if(!([_num] call fnc_isnumber)) exitWith {hint "Falsches Zahlenformat!";};
@@ -62,6 +62,6 @@ if(_ctrl == "money") then
 	}
 		else
 	{
-		hint "Du kannst nichts mehr zu deinem Inventar hinzufÃ¼gen? Ist dein Inventar voll?";
+		hint "Du kannst nichts mehr zu deinem Inventar hinzufügen? Ist dein Inventar voll?";
 	};
 };
